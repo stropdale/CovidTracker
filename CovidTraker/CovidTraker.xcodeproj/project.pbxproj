@@ -15,6 +15,8 @@
 		E4BAEC9D252D03E000F3D73C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4BAEC9B252D03E000F3D73C /* LaunchScreen.storyboard */; };
 		E4BAECA8252D03E000F3D73C /* CovidTrakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BAECA7252D03E000F3D73C /* CovidTrakerTests.swift */; };
 		E4BAECB3252D03E000F3D73C /* CovidTrakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BAECB2252D03E000F3D73C /* CovidTrakerUITests.swift */; };
+		E4BAECC5252D044E00F3D73C /* LocalAuthorityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BAECC4252D044E00F3D73C /* LocalAuthorityModel.swift */; };
+		E4BAECCA252D076800F3D73C /* dataset.json in Resources */ = {isa = PBXBuildFile; fileRef = E4BAECC9252D076800F3D73C /* dataset.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E4BAECAE252D03E000F3D73C /* CovidTrakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidTrakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BAECB2252D03E000F3D73C /* CovidTrakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidTrakerUITests.swift; sourceTree = "<group>"; };
 		E4BAECB4252D03E000F3D73C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4BAECC4252D044E00F3D73C /* LocalAuthorityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthorityModel.swift; sourceTree = "<group>"; };
+		E4BAECC9252D076800F3D73C /* dataset.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dataset.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		E4BAEC8F252D03DE00F3D73C /* CovidTraker */ = {
 			isa = PBXGroup;
 			children = (
+				E4BAECC3252D042300F3D73C /* Models */,
 				E4BAEC90252D03DE00F3D73C /* AppDelegate.swift */,
 				E4BAEC92252D03DE00F3D73C /* SceneDelegate.swift */,
 				E4BAEC94252D03DE00F3D73C /* ViewController.swift */,
@@ -126,6 +131,15 @@
 				E4BAECB4252D03E000F3D73C /* Info.plist */,
 			);
 			path = CovidTrakerUITests;
+			sourceTree = "<group>";
+		};
+		E4BAECC3252D042300F3D73C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4BAECC9252D076800F3D73C /* dataset.json */,
+				E4BAECC4252D044E00F3D73C /* LocalAuthorityModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +247,7 @@
 			files = (
 				E4BAEC9D252D03E000F3D73C /* LaunchScreen.storyboard in Resources */,
 				E4BAEC9A252D03E000F3D73C /* Assets.xcassets in Resources */,
+				E4BAECCA252D076800F3D73C /* dataset.json in Resources */,
 				E4BAEC98252D03DE00F3D73C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BAEC95252D03DE00F3D73C /* ViewController.swift in Sources */,
+				E4BAECC5252D044E00F3D73C /* LocalAuthorityModel.swift in Sources */,
 				E4BAEC91252D03DE00F3D73C /* AppDelegate.swift in Sources */,
 				E4BAEC93252D03DE00F3D73C /* SceneDelegate.swift in Sources */,
 			);
