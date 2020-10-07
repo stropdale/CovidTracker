@@ -17,8 +17,14 @@ class SummaryModelTableViewCell: UITableViewCell {
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var directionArrow: UIImageView!
     
-    func populate(model: LocalAuthorityModel) {
-        localAuthLabel.text = model.localAuthorityName
+    func populate(model: LocalAuthorityModel, rank: Int?) {
+        if let rank = rank {
+            localAuthLabel.text = "\(model.localAuthorityName) (\(rank))"
+        }
+        else {
+            localAuthLabel.text = model.localAuthorityName
+        }
+        
         if let lastRate = model.rate.last {
             rateLabel.text = "\(lastRate)"
         }

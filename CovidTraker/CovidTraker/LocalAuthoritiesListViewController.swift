@@ -17,21 +17,43 @@ class LocalAuthoritiesListViewController: UIViewController {
     
     var sortedDataModels: [LocalAuthorityModel]? {
         get {
-            guard let models = dataModels else {
-                return nil
-            }
-            
-            if segmentedController.selectedSegmentIndex == 0 { // abc
-                return models.sorted(by: { (first, second) -> Bool in
-                    return first.localAuthorityName > second.localAuthorityName
-                })
-            }
-            else { // rate
-                return models.sorted(by: { (first, second) -> Bool in
-                    return first.rate.last! > second.rate.last!
-                })
+            return segmentedController.selectedSegmentIndex == 0 ? alphaSortedDataModels : rankSortedDataModels
+        }
+    }
+    
+    var alphaSortedDataModels: [LocalAuthorityModel]? {
+        guard let models = dataModels else {
+            return nil
+        }
+        
+        return models.sorted(by: { (first, second) -> Bool in
+            return first.localAuthorityName < second.localAuthorityName
+        })
+    }
+    
+    var rankSortedDataModels: [LocalAuthorityModel]? {
+        guard let models = dataModels else {
+            return nil
+        }
+        
+        return models.sorted(by: { (first, second) -> Bool in
+            return first.rate.last! > second.rate.last!
+        })
+    }
+    
+    func getRankFor(model: LocalAuthorityModel) -> Int? {
+        guard let arr = rankSortedDataModels else {
+            return nil
+        }
+        
+        let name = model.localAuthorityName
+        for (i, m) in arr.enumerated() {
+            if name == m.localAuthorityName {
+                return i + 1
             }
         }
+        
+        return nil
     }
     
     @IBAction func segmentedControlChanged(_ sender: Any) {
@@ -64,7 +86,7 @@ extension LocalAuthoritiesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SummaryModelTableViewCell
         let model = sortedDataModels![indexPath.row]
-        cell.populate(model: model)
+        cell.populate(model: model, rank: getRankFor(model: model))
         
         return cell
     }
