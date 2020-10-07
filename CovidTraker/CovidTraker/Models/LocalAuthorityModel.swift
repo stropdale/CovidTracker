@@ -32,12 +32,12 @@ struct LocalAuthorityModel {
     
     var change: Change {
         get {
-            if rate.isEmpty || rate.count == 1 {
+            if cumulativePositiveCases.isEmpty || cumulativePositiveCases.count == 1 {
                 return .noChange
             }
             
-            let w1 = rate[rate.count - 2]
-            let w2 = rate.last!
+            let w1 = cumulativePositiveCases[cumulativePositiveCases.count - 2]
+            let w2 = cumulativePositiveCases.last!
             
             if w1 == w2 {
                 return .noChange
@@ -48,13 +48,32 @@ struct LocalAuthorityModel {
     }
     
     /// Array of floats. Position 0 is week 30
-    var rate: [Float]
+    var cumulativePositiveCases: [Float]
+    
+    // TODO: Work out how many new cases since the previous week. Work this out from the above.
+    var newPositiveCases: [Float] {
+        get {
+            var arr = [Float]()
+            
+            var change: Float = 0.0
+            for cases in cumulativePositiveCases {
+                let diff = cases - change
+                arr.append(diff)
+                change = cases
+            }
+            
+            return arr
+        }
+    }
+    
+    
+    
     
     init(json: [String : Any]) {
         localAuthorityName = json[localAuthorityNameKey] as! String
         specialMeasuresLink = json[specialMeasuresLinkKey] as! String
         
-        rate = [Float]()
+        cumulativePositiveCases = [Float]()
         
         var keyVal = 30
         var finished = false
@@ -64,7 +83,7 @@ struct LocalAuthorityModel {
             
             if let val = json[key] {
                 if let f = val as? NSNumber {
-                    rate.append(f.floatValue)
+                    cumulativePositiveCases.append(f.floatValue)
                 }
                 else {
                     let t = type(of: val)

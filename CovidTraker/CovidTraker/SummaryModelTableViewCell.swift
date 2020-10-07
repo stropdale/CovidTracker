@@ -24,7 +24,7 @@ class SummaryModelTableViewCell: UITableViewCell {
             localAuthLabel.text = model.localAuthorityName
         }
         
-        if let lastRate = model.rate.last {
+        if let lastRate = model.cumulativePositiveCases.last {
             rateLabel.text = "\(lastRate)"
         }
         else {

@@ -11,7 +11,6 @@ class LocalAuthDetailsViewController: UIViewController {
     
     var localAuthModel: LocalAuthorityModel? {
         didSet {
-            print("Set")
             populate()
         }
     }
