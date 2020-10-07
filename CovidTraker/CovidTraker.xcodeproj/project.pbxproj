@@ -112,10 +112,10 @@
 				E4BAEC92252D03DE00F3D73C /* SceneDelegate.swift */,
 				E4BAEC94252D03DE00F3D73C /* LocalAuthoritiesListViewController.swift */,
 				E4BAEC96252D03DE00F3D73C /* Main.storyboard */,
+				E4F3AC99252DB9A00016B3A8 /* SummaryModelTableViewCell.swift */,
 				E4BAEC99252D03E000F3D73C /* Assets.xcassets */,
 				E4BAEC9B252D03E000F3D73C /* LaunchScreen.storyboard */,
 				E4BAEC9E252D03E000F3D73C /* Info.plist */,
-				E4F3AC99252DB9A00016B3A8 /* SummaryModelTableViewCell.swift */,
 			);
 			path = CovidTraker;
 			sourceTree = "<group>";
