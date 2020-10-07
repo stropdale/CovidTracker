@@ -15,6 +15,8 @@ class LocalAuthoritiesListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    var selectedLocalAuthDetailsViewController: LocalAuthDetailsViewController?
+    
     @IBAction func segmentedControlChanged(_ sender: Any) {
         tableView.reloadData()
     }
@@ -26,9 +28,13 @@ class LocalAuthoritiesListViewController: UIViewController {
         return models
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? LocalAuthDetailsViewController {
+            selectedLocalAuthDetailsViewController = vc
+        }
+        else {
+            selectedLocalAuthDetailsViewController = nil
+        }
     }
 }
 
@@ -48,7 +54,7 @@ extension LocalAuthoritiesListViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let model = models[indexPath.row]
-        
+        selectedLocalAuthDetailsViewController?.model = model
     }
 }
 

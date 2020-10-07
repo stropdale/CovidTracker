@@ -20,6 +20,7 @@
 		E4BAECCA252D076800F3D73C /* dataset.json in Resources */ = {isa = PBXBuildFile; fileRef = E4BAECC9252D076800F3D73C /* dataset.json */; };
 		E4F3AC9A252DB9A00016B3A8 /* SummaryModelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3AC99252DB9A00016B3A8 /* SummaryModelTableViewCell.swift */; };
 		E4F3ACAB252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3ACAA252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift */; };
+		E4F3ACB1252E0E010016B3A8 /* LocalAuthDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3ACB0252E0E010016B3A8 /* LocalAuthDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E4BAECC9252D076800F3D73C /* dataset.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dataset.json; sourceTree = "<group>"; };
 		E4F3AC99252DB9A00016B3A8 /* SummaryModelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryModelTableViewCell.swift; sourceTree = "<group>"; };
 		E4F3ACAA252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthoritiesListViewModel.swift; sourceTree = "<group>"; };
+		E4F3ACB0252E0E010016B3A8 /* LocalAuthDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +111,10 @@
 		E4BAEC8F252D03DE00F3D73C /* CovidTraker */ = {
 			isa = PBXGroup;
 			children = (
+				E4F3ACAF252E0D890016B3A8 /* View Controllers */,
 				E4BAECC3252D042300F3D73C /* Models */,
 				E4BAEC90252D03DE00F3D73C /* AppDelegate.swift */,
 				E4BAEC92252D03DE00F3D73C /* SceneDelegate.swift */,
-				E4BAEC94252D03DE00F3D73C /* LocalAuthoritiesListViewController.swift */,
-				E4F3ACAA252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift */,
 				E4BAEC96252D03DE00F3D73C /* Main.storyboard */,
 				E4F3AC99252DB9A00016B3A8 /* SummaryModelTableViewCell.swift */,
 				E4BAEC99252D03E000F3D73C /* Assets.xcassets */,
@@ -149,6 +150,16 @@
 				E4663069252DAFE700B35C76 /* DataLoader.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E4F3ACAF252E0D890016B3A8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4BAEC94252D03DE00F3D73C /* LocalAuthoritiesListViewController.swift */,
+				E4F3ACAA252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift */,
+				E4F3ACB0252E0E010016B3A8 /* LocalAuthDetailsViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E466306A252DAFE700B35C76 /* DataLoader.swift in Sources */,
+				E4F3ACB1252E0E010016B3A8 /* LocalAuthDetailsViewController.swift in Sources */,
 				E4BAEC95252D03DE00F3D73C /* LocalAuthoritiesListViewController.swift in Sources */,
 				E4BAECC5252D044E00F3D73C /* LocalAuthorityModel.swift in Sources */,
 				E4BAEC91252D03DE00F3D73C /* AppDelegate.swift in Sources */,
