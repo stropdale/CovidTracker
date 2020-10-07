@@ -80,7 +80,7 @@
                                             <outlet property="directionArrow" destination="rqa-NA-hEX" id="9pQ-49-tzX"/>
                                             <outlet property="localAuthLabel" destination="crn-Gs-j8y" id="A4C-Vk-8LH"/>
                                             <outlet property="rateLabel" destination="piY-Ro-WoZ" id="Z5I-wj-7bc"/>
-                                            <segue destination="YO0-Oh-D7Y" kind="presentation" identifier="LocalAuthDetailsViewController" id="EI5-dR-qO4"/>
+                                            <segue destination="ikm-7F-mhB" kind="presentation" identifier="LocalAuthDetailsViewController" id="EI5-dR-qO4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -123,7 +123,7 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="79.6875"/>
         </scene>
-        <!--Local Auth Details View Controller-->
+        <!--Some Local Authority-->
         <scene sceneID="APb-vK-YD9">
             <objects>
                 <viewController storyboardIdentifier="LocalAuthDetailsViewController" id="YO0-Oh-D7Y" customClass="LocalAuthDetailsViewController" customModule="CovidTraker" customModuleProvider="target" sceneMemberID="viewController">
@@ -131,18 +131,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2b-Rd-a5e">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                                <items>
-                                    <navigationItem title="Local Authority" id="8lI-MO-KKU">
-                                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="LdX-Xn-k1Y">
-                                            <connections>
-                                                <action selector="doneTapped:" destination="YO0-Oh-D7Y" id="KbL-5C-8O6"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4M-A3-erN">
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <subviews>
@@ -171,23 +159,23 @@
                         <viewLayoutGuide key="safeArea" id="kUB-Y2-HMd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="A2b-Rd-a5e" firstAttribute="trailing" secondItem="kUB-Y2-HMd" secondAttribute="trailing" id="3Vr-IZ-7nc"/>
                             <constraint firstItem="D4M-A3-erN" firstAttribute="leading" secondItem="kUB-Y2-HMd" secondAttribute="leading" id="A54-Kd-Ro1"/>
-                            <constraint firstItem="D4M-A3-erN" firstAttribute="top" secondItem="kUB-Y2-HMd" secondAttribute="top" constant="56" id="JZ1-Dk-VU5"/>
+                            <constraint firstItem="D4M-A3-erN" firstAttribute="top" secondItem="kUB-Y2-HMd" secondAttribute="top" id="JZ1-Dk-VU5"/>
                             <constraint firstItem="kUB-Y2-HMd" firstAttribute="trailing" secondItem="D4M-A3-erN" secondAttribute="trailing" id="QzR-gH-gWA"/>
-                            <constraint firstItem="D4M-A3-erN" firstAttribute="bottom" secondItem="kUB-Y2-HMd" secondAttribute="bottom" constant="34" id="d2a-rV-anx"/>
-                            <constraint firstItem="A2b-Rd-a5e" firstAttribute="top" secondItem="kUB-Y2-HMd" secondAttribute="top" id="lnk-WA-3Wf"/>
-                            <constraint firstItem="A2b-Rd-a5e" firstAttribute="leading" secondItem="kUB-Y2-HMd" secondAttribute="leading" id="nH7-fz-die"/>
+                            <constraint firstItem="D4M-A3-erN" firstAttribute="bottom" secondItem="utV-1u-lcs" secondAttribute="bottom" id="d2a-rV-anx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aoT-2A-hiW"/>
-                    <connections>
-                        <outlet property="navBar" destination="A2b-Rd-a5e" id="eXj-JT-hgm"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Some Local Authority" id="aoT-2A-hiW">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="nwM-V7-uei">
+                            <connections>
+                                <action selector="doneTapped:" destination="YO0-Oh-D7Y" id="SBA-ps-iP1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4Q-Cz-KY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844.9275362318842" y="79.6875"/>
+            <point key="canvasLocation" x="2755.072463768116" y="79.6875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p7C-sT-B1k">
@@ -206,6 +194,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wC5-k3-Yki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZmZ-2s-vGa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ikm-7F-mhB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2QZ-cI-pzE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YO0-Oh-D7Y" kind="relationship" relationship="rootViewController" id="mmJ-8w-REg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvX-V8-Hmn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844.9275362318842" y="79.6875"/>
         </scene>
     </scenes>
     <resources>

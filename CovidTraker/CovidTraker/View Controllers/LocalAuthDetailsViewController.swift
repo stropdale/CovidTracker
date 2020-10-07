@@ -8,18 +8,16 @@
 import UIKit
 
 class LocalAuthDetailsViewController: UIViewController {
-
-    @IBOutlet weak var navBar: UINavigationBar!
     
-    var model: LocalAuthorityModel? {
+    var localAuthModel: LocalAuthorityModel? {
         didSet {
-            
+            print("Set")
             populate()
         }
     }
     
     private func populate() {
-        navBar.topItem?.title = model?.localAuthorityName
+        title = localAuthModel?.localAuthorityName
     }
     
     @IBAction func doneTapped(_ sender: Any) {

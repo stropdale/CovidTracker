@@ -28,9 +28,16 @@ class LocalAuthoritiesListViewController: UIViewController {
         return models
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.keyboardDismissMode = .onDrag
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? LocalAuthDetailsViewController {
-            selectedLocalAuthDetailsViewController = vc
+        if let nc = segue.destination as? UINavigationController {
+            if let vc = nc.viewControllers.first as? LocalAuthDetailsViewController {
+                selectedLocalAuthDetailsViewController = vc
+            }
         }
         else {
             selectedLocalAuthDetailsViewController = nil
@@ -54,7 +61,7 @@ extension LocalAuthoritiesListViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let model = models[indexPath.row]
-        selectedLocalAuthDetailsViewController?.model = model
+        selectedLocalAuthDetailsViewController?.localAuthModel = model
     }
 }
 
