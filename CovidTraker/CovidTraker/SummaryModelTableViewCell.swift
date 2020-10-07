@@ -7,18 +7,11 @@
 
 import UIKit
 
-class SummaryModelTableViewCell: UITableViewCell {
-    
-    
-    @IBOutlet weak var labelLeadingContraint: NSLayoutConstraint!
-    private let showImageConstraint: CGFloat = 40.0
-    private let hideImageConstraint: CGFloat = 0.0
-    
+class SummaryModelTableViewCell: UITableViewCell {    
     let upImage = UIImage(systemName: "arrow.up")?.withRenderingMode(.alwaysTemplate)
     let downImage = UIImage(systemName: "arrow.down")?.withRenderingMode(.alwaysTemplate)
     let noChangeImage = UIImage(systemName: "equal")?.withRenderingMode(.alwaysTemplate)
 
-    @IBOutlet weak var warningImage: UIImageView!
     @IBOutlet weak var localAuthLabel: UILabel!
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var directionArrow: UIImageView!
@@ -52,13 +45,10 @@ class SummaryModelTableViewCell: UITableViewCell {
         }
         
         // Special Measures
+        
+        localAuthLabel.textColor = .label
         if model.isUnderSpecialMeasures {
-            labelLeadingContraint.constant = showImageConstraint
-            warningImage.isHidden = false
-        }
-        else {
-            labelLeadingContraint.constant = hideImageConstraint
-            warningImage.isHidden = true
+            localAuthLabel.textColor = .systemRed
         }
     }
     
