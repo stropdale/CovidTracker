@@ -58,7 +58,7 @@ class LocalAuthoritiesListViewModel {
         }
         
         return models.sorted(by: { (first, second) -> Bool in
-            return first.cumulativePositiveCases.last! > second.cumulativePositiveCases.last!
+            return first.newPositiveCases.last! > second.newPositiveCases.last!
         })
     }
     

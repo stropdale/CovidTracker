@@ -54,7 +54,7 @@ extension LocalAuthoritiesListViewController: UISearchBarDelegate {
 
 extension LocalAuthoritiesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 72
+        return 80
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

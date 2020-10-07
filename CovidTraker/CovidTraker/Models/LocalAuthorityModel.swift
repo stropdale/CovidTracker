@@ -32,12 +32,12 @@ struct LocalAuthorityModel {
     
     var change: Change {
         get {
-            if cumulativePositiveCases.isEmpty || cumulativePositiveCases.count == 1 {
+            if newPositiveCases.isEmpty || newPositiveCases.count == 1 {
                 return .noChange
             }
             
-            let w1 = cumulativePositiveCases[cumulativePositiveCases.count - 2]
-            let w2 = cumulativePositiveCases.last!
+            let w1 = newPositiveCases[newPositiveCases.count - 2]
+            let w2 = newPositiveCases.last!
             
             if w1 == w2 {
                 return .noChange
