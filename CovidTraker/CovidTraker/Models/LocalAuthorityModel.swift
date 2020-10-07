@@ -18,6 +18,12 @@ struct LocalAuthorityModel {
     /// Is there a special measures link. If empty the area is not in specidal measures
     let specialMeasuresLink: String
     
+    var isUnderSpecialMeasures: Bool {
+        get {
+            return !specialMeasuresLink.isEmpty
+        }
+    }
+    
     /// Array of floats. Position 0 is week 30
     var rate: [Float]
     
