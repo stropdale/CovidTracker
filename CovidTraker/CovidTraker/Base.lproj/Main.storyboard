@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HfY-8U-5Il">
-                                <rect key="frame" x="20" y="108" width="374" height="32"/>
+                                <rect key="frame" x="20" y="152" width="374" height="32"/>
                                 <segments>
                                     <segment title="a -&gt; z"/>
                                     <segment title="per 100k"/>
@@ -27,7 +27,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ImL-yf-xi8">
-                                <rect key="frame" x="0.0" y="147" width="414" height="749"/>
+                                <rect key="frame" x="0.0" y="191" width="414" height="705"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="72" id="htD-gc-ESd" customClass="SummaryModelTableViewCell" customModule="CovidTraker" customModuleProvider="target">
@@ -88,6 +88,13 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="STG-6l-IWH"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1MH-Ig-868">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Hgx-8I-W9v"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -95,14 +102,18 @@
                             <constraint firstAttribute="bottom" secondItem="ImL-yf-xi8" secondAttribute="bottom" id="7Dk-Al-1U2"/>
                             <constraint firstItem="HfY-8U-5Il" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ai1-vo-yNd"/>
                             <constraint firstItem="ImL-yf-xi8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B5F-CO-LWr"/>
+                            <constraint firstItem="1MH-Ig-868" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H9d-gd-n2S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HfY-8U-5Il" secondAttribute="trailing" constant="20" id="KT4-Z5-14x"/>
-                            <constraint firstItem="HfY-8U-5Il" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="edG-uv-w7R"/>
                             <constraint firstItem="ImL-yf-xi8" firstAttribute="top" secondItem="HfY-8U-5Il" secondAttribute="bottom" constant="8" symbolic="YES" id="hn2-aA-edZ"/>
+                            <constraint firstItem="1MH-Ig-868" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ofr-gW-onH"/>
+                            <constraint firstItem="1MH-Ig-868" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rCT-Z9-YPn"/>
+                            <constraint firstItem="HfY-8U-5Il" firstAttribute="top" secondItem="1MH-Ig-868" secondAttribute="bottom" constant="8" id="t7v-Zk-dzT"/>
                             <constraint firstItem="ImL-yf-xi8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="t9B-LF-6Bz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Local Authorities" id="VgU-TR-qKk"/>
                     <connections>
+                        <outlet property="searchBar" destination="1MH-Ig-868" id="G9D-e9-BJJ"/>
                         <outlet property="segmentedController" destination="HfY-8U-5Il" id="lKc-76-h0j"/>
                         <outlet property="tableView" destination="ImL-yf-xi8" id="V5C-LI-jeh"/>
                     </connections>

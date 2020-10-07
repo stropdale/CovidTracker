@@ -19,6 +19,7 @@
 		E4BAECC5252D044E00F3D73C /* LocalAuthorityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BAECC4252D044E00F3D73C /* LocalAuthorityModel.swift */; };
 		E4BAECCA252D076800F3D73C /* dataset.json in Resources */ = {isa = PBXBuildFile; fileRef = E4BAECC9252D076800F3D73C /* dataset.json */; };
 		E4F3AC9A252DB9A00016B3A8 /* SummaryModelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3AC99252DB9A00016B3A8 /* SummaryModelTableViewCell.swift */; };
+		E4F3ACAB252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F3ACAA252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E4BAECC4252D044E00F3D73C /* LocalAuthorityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthorityModel.swift; sourceTree = "<group>"; };
 		E4BAECC9252D076800F3D73C /* dataset.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dataset.json; sourceTree = "<group>"; };
 		E4F3AC99252DB9A00016B3A8 /* SummaryModelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryModelTableViewCell.swift; sourceTree = "<group>"; };
+		E4F3ACAA252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthoritiesListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				E4BAEC90252D03DE00F3D73C /* AppDelegate.swift */,
 				E4BAEC92252D03DE00F3D73C /* SceneDelegate.swift */,
 				E4BAEC94252D03DE00F3D73C /* LocalAuthoritiesListViewController.swift */,
+				E4F3ACAA252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift */,
 				E4BAEC96252D03DE00F3D73C /* Main.storyboard */,
 				E4F3AC99252DB9A00016B3A8 /* SummaryModelTableViewCell.swift */,
 				E4BAEC99252D03E000F3D73C /* Assets.xcassets */,
@@ -283,6 +286,7 @@
 				E4BAEC95252D03DE00F3D73C /* LocalAuthoritiesListViewController.swift in Sources */,
 				E4BAECC5252D044E00F3D73C /* LocalAuthorityModel.swift in Sources */,
 				E4BAEC91252D03DE00F3D73C /* AppDelegate.swift in Sources */,
+				E4F3ACAB252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift in Sources */,
 				E4F3AC9A252DB9A00016B3A8 /* SummaryModelTableViewCell.swift in Sources */,
 				E4BAEC93252D03DE00F3D73C /* SceneDelegate.swift in Sources */,
 			);
@@ -461,6 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6ZBXMFUFJ7;
 				INFOPLIST_FILE = CovidTraker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,6 +485,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6ZBXMFUFJ7;
 				INFOPLIST_FILE = CovidTraker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
