@@ -148,13 +148,13 @@
                         <viewLayoutGuide key="safeArea" id="kUB-Y2-HMd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="D4M-A3-erN" secondAttribute="bottom" id="21n-d2-lRx"/>
-                            <constraint firstItem="D4M-A3-erN" firstAttribute="top" secondItem="A2b-Rd-a5e" secondAttribute="bottom" id="3Ib-we-Zho"/>
                             <constraint firstItem="A2b-Rd-a5e" firstAttribute="trailing" secondItem="kUB-Y2-HMd" secondAttribute="trailing" id="3Vr-IZ-7nc"/>
-                            <constraint firstItem="D4M-A3-erN" firstAttribute="trailing" secondItem="kUB-Y2-HMd" secondAttribute="trailing" id="QWS-Ek-efR"/>
+                            <constraint firstItem="D4M-A3-erN" firstAttribute="leading" secondItem="kUB-Y2-HMd" secondAttribute="leading" id="A54-Kd-Ro1"/>
+                            <constraint firstItem="D4M-A3-erN" firstAttribute="top" secondItem="kUB-Y2-HMd" secondAttribute="top" constant="56" id="JZ1-Dk-VU5"/>
+                            <constraint firstItem="kUB-Y2-HMd" firstAttribute="trailing" secondItem="D4M-A3-erN" secondAttribute="trailing" id="QzR-gH-gWA"/>
+                            <constraint firstItem="D4M-A3-erN" firstAttribute="bottom" secondItem="kUB-Y2-HMd" secondAttribute="bottom" constant="34" id="d2a-rV-anx"/>
                             <constraint firstItem="A2b-Rd-a5e" firstAttribute="top" secondItem="kUB-Y2-HMd" secondAttribute="top" id="lnk-WA-3Wf"/>
                             <constraint firstItem="A2b-Rd-a5e" firstAttribute="leading" secondItem="kUB-Y2-HMd" secondAttribute="leading" id="nH7-fz-die"/>
-                            <constraint firstItem="D4M-A3-erN" firstAttribute="leading" secondItem="kUB-Y2-HMd" secondAttribute="leading" id="toh-Qp-2xB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aoT-2A-hiW"/>
