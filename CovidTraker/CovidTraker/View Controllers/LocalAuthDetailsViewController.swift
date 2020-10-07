@@ -21,5 +21,9 @@ class LocalAuthDetailsViewController: UIViewController {
     private func populate() {
         navBar.topItem?.title = model?.localAuthorityName
     }
-
+    
+    @IBAction func doneTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
