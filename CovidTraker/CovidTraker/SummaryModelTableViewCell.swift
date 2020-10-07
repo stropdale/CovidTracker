@@ -8,6 +8,10 @@
 import UIKit
 
 class SummaryModelTableViewCell: UITableViewCell {
+    
+    let upImage = UIImage(systemName: "arrow.up")?.withRenderingMode(.alwaysTemplate)
+    let downImage = UIImage(systemName: "arrow.down")?.withRenderingMode(.alwaysTemplate)
+    let noChangeImage = UIImage(systemName: "equal")?.withRenderingMode(.alwaysTemplate)
 
     @IBOutlet weak var localAuthLabel: UILabel!
     @IBOutlet weak var rateLabel: UILabel!
@@ -20,6 +24,18 @@ class SummaryModelTableViewCell: UITableViewCell {
         }
         else {
             rateLabel.text = "?"
+        }
+        
+        switch model.change {
+        case .up:
+            directionArrow.image = upImage
+            directionArrow.tintColor = .red
+        case .down:
+            directionArrow.image = downImage
+            directionArrow.tintColor = .green
+        case .noChange:
+            directionArrow.image = upImage
+            directionArrow.tintColor = .gray
         }
     }
     
