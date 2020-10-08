@@ -30,45 +30,25 @@ struct LocalAuthorityModel {
         }
     }
     
-    var change: Change {
-        get {
-            if newPositiveCases.isEmpty || newPositiveCases.count == 1 {
-                return .noChange
-            }
-            
-            let w1 = newPositiveCases[newPositiveCases.count - 2]
-            let w2 = newPositiveCases.last!
-            
-            if w1 == w2 {
-                return .noChange
-            }
-            
-            return w1 > w2 ? .down : .up
-        }
-    }
-    
     /// Array of floats. Position 0 is week 30
     var cumulativePositiveCases: [Float]
     
-    // TODO: Work out how many new cases since the previous week. Work this out from the above.
-    var newPositiveCases: [Float] {
-        get {
-            var arr = [Float]()
-            
-            var change: Float = 0.0
-            for cases in cumulativePositiveCases {
-                let diff = cases - change
-                arr.append(diff)
-                change = cases
-            }
-            
-            return arr
+    var mostRecentWeekCumulativeCases: Float? {
+        if cumulativePositiveCases.count == 0 {
+            return nil
         }
+        
+        return cumulativePositiveCases.last
     }
     
-    
-    
-    
+    var previousWeekCumulativeCases: Float? {
+        if cumulativePositiveCases.count < 2 {
+            return nil
+        }
+        
+        return cumulativePositiveCases[newPositiveCases.count - 2]
+    }
+
     init(json: [String : Any]) {
         localAuthorityName = json[localAuthorityNameKey] as! String
         specialMeasuresLink = json[specialMeasuresLinkKey] as! String
@@ -98,6 +78,57 @@ struct LocalAuthorityModel {
             }
             
             keyVal += 1
+        }
+    }
+}
+
+/// New positive cases by week
+extension LocalAuthorityModel {
+    var newPositiveCases: [Float] {
+        get {
+            var arr = [Float]()
+            
+            var change: Float = 0.0
+            for cases in cumulativePositiveCases {
+                let diff = cases - change
+                arr.append(diff)
+                change = cases
+            }
+            
+            return arr
+        }
+    }
+    
+    var mostRecentWeekPositiveCases: Float? {
+        if newPositiveCases.count == 0 {
+            return nil
+        }
+        
+        return newPositiveCases.last
+    }
+    
+    var previousWeekPositiveCases: Float? {
+        if newPositiveCases.count < 2 {
+            return nil
+        }
+        
+        return newPositiveCases[newPositiveCases.count - 2]
+    }
+    
+    var change: Change {
+        get {
+            if newPositiveCases.isEmpty || newPositiveCases.count == 1 {
+                return .noChange
+            }
+            
+            let w1 = newPositiveCases[newPositiveCases.count - 2]
+            let w2 = newPositiveCases.last!
+            
+            if w1 == w2 {
+                return .noChange
+            }
+            
+            return w1 > w2 ? .down : .up
         }
     }
 }

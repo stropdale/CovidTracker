@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class LocalAuthDetailsViewController: UIViewController {
     
@@ -13,9 +14,15 @@ class LocalAuthDetailsViewController: UIViewController {
     let downImage = UIImage(systemName: "arrow.down")?.withRenderingMode(.alwaysTemplate)
     let noChangeImage = UIImage(systemName: "equal")?.withRenderingMode(.alwaysTemplate)
     
-    @IBOutlet weak var cumulativeCasesLabel: UILabel!
-    @IBOutlet weak var newCasesLabel: UILabel!
+    @IBOutlet weak var cumulativeCasesStatsLabel: UILabel!
+    @IBOutlet weak var cumulativeCasesDescLabel: UILabel!
+    
+    @IBOutlet weak var newCasesStatsLabel: UILabel!
+    @IBOutlet weak var newCasesDescLabel: UILabel!
+    
     @IBOutlet weak var directionArrow: UIImageView!
+    @IBOutlet weak var directionDescLabel: UILabel!
+    
     @IBOutlet weak var changeDirectionLabel: UILabel!
     @IBOutlet weak var inLockDown: UILabel!
     
@@ -27,35 +34,95 @@ class LocalAuthDetailsViewController: UIViewController {
         }
         
         title = model.localAuthorityName
-        
-        if let lastRate = model.cumulativePositiveCases.last {
-            let cumulativeStr = String(format: "%.1f", lastRate)
-            cumulativeCasesLabel.text = cumulativeStr
+
+        setLockdownState()
+        setNewCases()
+        setCumilativeCases()
+        setDirection()
+    }
+    
+    private func setNewCases() {
+        guard let model = localAuthModel else {
+            return
         }
         
-        if let lastRate = model.newPositiveCases.last {
-            let cumulativeStr = String(format: "%.1f", lastRate)
-            newCasesLabel.text = cumulativeStr
+        guard let lastRate = model.mostRecentWeekPositiveCases else {
+            return
         }
         
-        // Change
+        let cumulativeStr = String(format: "%.1f", lastRate)
+        newCasesStatsLabel.text = cumulativeStr
+        
+        // Description
+        
+        //TODO: Week ending date
+        
+        newCasesDescLabel.text = "new cases of COVID-19 reported per 100k in the week ending ****."
+    }
+    
+    private func setDirection() {
+        guard let model = localAuthModel else {
+            return
+        }
+        
+        // Stat
+        
+        // TODO: Number of cases change
+        let thisWeek = model.mostRecentWeekPositiveCases
+        let lastWeek = model.previousWeekPositiveCases
+        
         switch model.change {
         case .up:
             directionArrow.image = upImage
             directionArrow.tintColor = .red
-            changeDirectionLabel.text = "There have been more positive results this week, compared to the previous week"
+            
+            if let tw = thisWeek, let lw = lastWeek {
+                let diff = String(format: "%.1f", tw - lw)
+                changeDirectionLabel.text = "Which is \(diff) (per 100k) more cases than were reported in the previous week. Meaning there have been..."
+            }
+            else {
+                changeDirectionLabel.text = "Which is more cases than were reported in the previous week. Meaning there have been..."
+            }
+            
+            
         case .down:
             directionArrow.image = downImage
             directionArrow.tintColor = .green
-            changeDirectionLabel.text = "There have been fewer positive results this week, compared to the previous week"
+    
+            if let tw = thisWeek, let lw = lastWeek {
+                let diff = String(format: "%.1f", lw - tw)
+                changeDirectionLabel.text = "Which is \(diff) (per 100k) fewer cases than were reported in the previous week. Meaning there have been..."
+            }
+            else {
+                changeDirectionLabel.text = "Which is fewer cases than were reported in the previous week. Meaning there have been..."
+            }
+            
         case .noChange:
             directionArrow.image = upImage
             directionArrow.tintColor = .gray
-            changeDirectionLabel.text = "Same number of cases this week, compared to last week"
+            changeDirectionLabel.text = "which is the same number as the previous week. Meaning there have been..."
+        }
+    }
+    
+    private func setCumilativeCases() {
+        guard let model = localAuthModel else {
+            return
         }
         
-        setLockdownState()
+        // Stat
+        guard let lastRate = model.mostRecentWeekCumulativeCases else {
+            return
+        }
+        
+        let cumulativeStr = String(format: "%.1f", lastRate)
+        cumulativeCasesStatsLabel.text = cumulativeStr
+        
+        // Description
+        cumulativeCasesDescLabel.text = "new cases of COVID-19 reported per 100k in the week ending ****, since the 29th of June"
+        
     }
+    
+    
     
     private func setLockdownState() {
         guard let model = localAuthModel else {
@@ -63,12 +130,12 @@ class LocalAuthDetailsViewController: UIViewController {
         }
         
         if model.isUnderSpecialMeasures {
-            inLockDown.text = "This area is currently under special measures.\nTap here to learn more."
+            inLockDown.text = "\(model.localAuthorityName) is currently under special measures.\nTap here to learn more."
             inLockDown.textColor = .red
             
         }
         else {
-            inLockDown.text = "This area is not currently under special measures."
+            inLockDown.text = "\(model.localAuthorityName) is not currently under special measures."
             inLockDown.textColor = .green
         }
     }
@@ -82,7 +149,12 @@ class LocalAuthDetailsViewController: UIViewController {
             return
         }
         
-        // TODO: Show web view
+        if let url = URL(string: model.specialMeasuresLink) {
+            let vc = SFSafariViewController.init(url: url)
+            vc.delegate = self
+
+            present(vc, animated: true)
+        }
     }
     
     @IBAction func doneTapped(_ sender: Any) {
@@ -91,7 +163,12 @@ class LocalAuthDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
         populate()
     }
     
+}
+
+extension LocalAuthDetailsViewController: SFSafariViewControllerDelegate {
+    // Nothing yet
 }

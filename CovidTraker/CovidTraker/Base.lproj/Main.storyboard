@@ -46,7 +46,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crn-Gs-j8y">
                                                     <rect key="frame" x="20" y="11" width="270" height="58"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -112,7 +112,7 @@
                             <constraint firstItem="ImL-yf-xi8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="t9B-LF-6Bz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="New cases in last week" id="VgU-TR-qKk"/>
+                    <navigationItem key="navigationItem" title="New cases in last week" largeTitleDisplayMode="always" id="VgU-TR-qKk"/>
                     <connections>
                         <outlet property="searchBar" destination="1MH-Ig-868" id="G9D-e9-BJJ"/>
                         <outlet property="segmentedController" destination="HfY-8U-5Il" id="lKc-76-h0j"/>
@@ -288,7 +288,7 @@ Tap here to learn more.</string>
                             <constraint firstItem="D4M-A3-erN" firstAttribute="bottom" secondItem="utV-1u-lcs" secondAttribute="bottom" id="d2a-rV-anx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Some Local Authority" id="aoT-2A-hiW">
+                    <navigationItem key="navigationItem" title="Some Local Authority" largeTitleDisplayMode="always" id="aoT-2A-hiW">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="nwM-V7-uei">
                             <connections>
                                 <action selector="doneTapped:" destination="YO0-Oh-D7Y" id="SBA-ps-iP1"/>
@@ -297,10 +297,13 @@ Tap here to learn more.</string>
                     </navigationItem>
                     <connections>
                         <outlet property="changeDirectionLabel" destination="AyO-9Z-4Gm" id="2kD-Lb-wEn"/>
-                        <outlet property="cumulativeCasesLabel" destination="1Ex-l5-00C" id="PWm-fm-W7C"/>
+                        <outlet property="cumulativeCasesDescLabel" destination="SYT-Nz-6Rc" id="MS0-Kd-FbH"/>
+                        <outlet property="cumulativeCasesStatsLabel" destination="1Ex-l5-00C" id="PWm-fm-W7C"/>
                         <outlet property="directionArrow" destination="Or0-H4-VB2" id="QLp-oU-F3V"/>
+                        <outlet property="directionDescLabel" destination="AyO-9Z-4Gm" id="vAO-zH-er9"/>
                         <outlet property="inLockDown" destination="L4c-MR-cG6" id="A7d-E1-thx"/>
-                        <outlet property="newCasesLabel" destination="L0e-ob-fFX" id="97v-oU-YOj"/>
+                        <outlet property="newCasesDescLabel" destination="9fi-bC-Tn3" id="yxG-B0-eqe"/>
+                        <outlet property="newCasesStatsLabel" destination="L0e-ob-fFX" id="97v-oU-YOj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4Q-Cz-KY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -123,7 +123,6 @@
 				9BF94C2106F772390B9AB9B0 /* Pods-CovidTrakerTests.debug.xcconfig */,
 				634C0FBBAE9F82DEBC6A39F0 /* Pods-CovidTrakerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -196,8 +195,8 @@
 		E4F3ACAF252E0D890016B3A8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E4BAEC94252D03DE00F3D73C /* LocalAuthoritiesListViewController.swift */,
 				E4F3ACAA252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift */,
+				E4BAEC94252D03DE00F3D73C /* LocalAuthoritiesListViewController.swift */,
 				E4F3ACB0252E0E010016B3A8 /* LocalAuthDetailsViewController.swift */,
 			);
 			path = "View Controllers";
