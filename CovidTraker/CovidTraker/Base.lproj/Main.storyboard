@@ -138,10 +138,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYf-uV-clm">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0e-ob-fFX">
-                                                        <rect key="frame" x="8" y="8" width="60" height="57"/>
+                                                        <rect key="frame" x="8" y="8" width="60" height="52"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="MHm-Ty-FmB"/>
                                                         </constraints>
@@ -150,7 +150,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New cases of COVID-19 per 100,000 since the previous week" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fi-bC-Tn3">
-                                                        <rect key="frame" x="76" y="16" width="330" height="41"/>
+                                                        <rect key="frame" x="76" y="16" width="330" height="36"/>
                                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
@@ -170,17 +170,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zkn-dQ-oQT">
-                                                <rect key="frame" x="0.0" y="73" width="414" height="73"/>
+                                                <rect key="frame" x="0.0" y="68" width="414" height="52"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of cases compared to previous week" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyO-9Z-4Gm">
-                                                        <rect key="frame" x="76" y="16" width="330" height="41"/>
+                                                        <rect key="frame" x="76" y="16" width="330" height="20"/>
                                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Or0-H4-VB2">
-                                                        <rect key="frame" x="8" y="17" width="60" height="39"/>
+                                                        <rect key="frame" x="8" y="17" width="60" height="18"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="qQj-iY-1T8"/>
                                                         </constraints>
@@ -198,10 +198,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLe-oc-kjH">
-                                                <rect key="frame" x="0.0" y="146" width="414" height="73"/>
+                                                <rect key="frame" x="0.0" y="120" width="414" height="68"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ex-l5-00C">
-                                                        <rect key="frame" x="8" y="8" width="60" height="57"/>
+                                                        <rect key="frame" x="8" y="8" width="60" height="52"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="zj7-mc-Bsh"/>
                                                         </constraints>
@@ -210,7 +210,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cumulative COVID-19 cases per 100,000 population tested since 29th June" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYT-Nz-6Rc">
-                                                        <rect key="frame" x="76" y="16" width="330" height="41"/>
+                                                        <rect key="frame" x="76" y="16" width="330" height="36"/>
                                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
@@ -230,10 +230,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZaF-6n-RcU">
-                                                <rect key="frame" x="0.0" y="219" width="414" height="73"/>
+                                                <rect key="frame" x="0.0" y="188" width="414" height="68"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4c-MR-cG6">
-                                                        <rect key="frame" x="16" y="16" width="382" height="41"/>
+                                                        <rect key="frame" x="16" y="16" width="382" height="36"/>
                                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
                                                         <string key="text">This area is currently under special measures.
 Tap here to learn more.</string>
@@ -242,7 +242,7 @@ Tap here to learn more.</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgp-kM-Tyi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
                                                         <connections>
                                                             <action selector="showSpecialMeasures:" destination="YO0-Oh-D7Y" eventType="touchUpInside" id="3Hd-mS-HNN"/>
                                                         </connections>
@@ -260,8 +260,32 @@ Tap here to learn more.</string>
                                                     <constraint firstItem="L4c-MR-cG6" firstAttribute="top" secondItem="ZaF-6n-RcU" secondAttribute="top" constant="16" id="v8t-LI-OMV"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYl-5F-Emh" userLabel="Divider">
+                                                <rect key="frame" x="0.0" y="256" width="414" height="1"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="DFx-j2-Ymz"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kxt-ZB-hER">
+                                                <rect key="frame" x="0.0" y="257" width="414" height="300"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Cases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K69-ha-rH4">
+                                                        <rect key="frame" x="16" y="8" width="90.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="K69-ha-rH4" firstAttribute="leading" secondItem="Kxt-ZB-hER" secondAttribute="leading" constant="16" id="0cg-vk-6pN"/>
+                                                    <constraint firstItem="K69-ha-rH4" firstAttribute="top" secondItem="Kxt-ZB-hER" secondAttribute="top" constant="8" id="Ond-XD-pH0"/>
+                                                    <constraint firstAttribute="height" constant="300" id="lO9-Lu-Y0f"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P59-gv-oPy">
-                                                <rect key="frame" x="0.0" y="292" width="414" height="411"/>
+                                                <rect key="frame" x="0.0" y="557" width="414" height="146"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                             </view>
                                         </subviews>
@@ -355,6 +379,9 @@ Tap here to learn more.</string>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
