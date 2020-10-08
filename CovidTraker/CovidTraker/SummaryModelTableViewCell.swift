@@ -39,7 +39,7 @@ class SummaryModelTableViewCell: UITableViewCell {
             directionArrow.tintColor = .red
         case .down:
             directionArrow.image = downImage
-            directionArrow.tintColor = .green
+            directionArrow.tintColor = .appGreen
         case .noChange:
             directionArrow.image = upImage
             directionArrow.tintColor = .gray

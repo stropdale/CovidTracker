@@ -56,8 +56,8 @@ class LocalAuthDetailsViewController: UIViewController {
         // Description
         
         //TODO: Week ending date
-        
-        newCasesDescLabel.text = "new cases of COVID-19 reported per 100k in the week ending ****."
+        let dateStr = DateHelpers.endDateStrForArrayPosition(position: model.newPositiveCases.count - 1)
+        newCasesDescLabel.text = "new cases of COVID-19 reported per 100k in the week ending \(dateStr)."
     }
     
     private func setDirection() {
@@ -87,7 +87,7 @@ class LocalAuthDetailsViewController: UIViewController {
             
         case .down:
             directionArrow.image = downImage
-            directionArrow.tintColor = .green
+            directionArrow.tintColor = .appGreen
     
             if let tw = thisWeek, let lw = lastWeek {
                 let diff = String(format: "%.1f", lw - tw)
@@ -118,11 +118,9 @@ class LocalAuthDetailsViewController: UIViewController {
         cumulativeCasesStatsLabel.text = cumulativeStr
         
         // Description
-        cumulativeCasesDescLabel.text = "new cases of COVID-19 reported per 100k in the week ending ****, since the 29th of June"
-        
+        let dateStr = DateHelpers.endDateStrForArrayPosition(position: model.newPositiveCases.count - 1)
+        cumulativeCasesDescLabel.text = "new cases of COVID-19 reported per 100k in the week ending \(dateStr), since the 29th of June"
     }
-    
-    
     
     private func setLockdownState() {
         guard let model = localAuthModel else {
@@ -136,7 +134,7 @@ class LocalAuthDetailsViewController: UIViewController {
         }
         else {
             inLockDown.text = "\(model.localAuthorityName) is not currently under special measures."
-            inLockDown.textColor = .green
+            inLockDown.textColor = .appGreen
         }
     }
     

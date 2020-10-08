@@ -10,6 +10,8 @@
 		581179B38F4F07CED8A282A0 /* Pods_CovidTraker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACDBAA87E769CD67727511C /* Pods_CovidTraker.framework */; };
 		AAE3D270463C3A139231209E /* Pods_CovidTrakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AB0C1BB2149D45CEF78E45 /* Pods_CovidTrakerTests.framework */; };
 		D97A91F1EDD0FDE21FE7B677 /* Pods_CovidTraker_CovidTrakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D522314A7C39B09C27AD84E /* Pods_CovidTraker_CovidTrakerUITests.framework */; };
+		E45DDB50252FA094007DEFD6 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DDB4F252FA094007DEFD6 /* DateHelpers.swift */; };
+		E45DDB55252FA634007DEFD6 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DDB54252FA634007DEFD6 /* ColorExtensions.swift */; };
 		E466306A252DAFE700B35C76 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4663069252DAFE700B35C76 /* DataLoader.swift */; };
 		E4BAEC91252D03DE00F3D73C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BAEC90252D03DE00F3D73C /* AppDelegate.swift */; };
 		E4BAEC93252D03DE00F3D73C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BAEC92252D03DE00F3D73C /* SceneDelegate.swift */; };
@@ -52,6 +54,8 @@
 		BACDBAA87E769CD67727511C /* Pods_CovidTraker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidTraker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B69880F4D6AB229486832D /* Pods-CovidTraker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidTraker.release.xcconfig"; path = "Target Support Files/Pods-CovidTraker/Pods-CovidTraker.release.xcconfig"; sourceTree = "<group>"; };
 		D8AB0C1BB2149D45CEF78E45 /* Pods_CovidTrakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidTrakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45DDB4F252FA094007DEFD6 /* DateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
+		E45DDB54252FA634007DEFD6 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		E4663069252DAFE700B35C76 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		E4BAEC8D252D03DE00F3D73C /* CovidTraker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidTraker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BAEC90252D03DE00F3D73C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +130,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E45DDB4E252FA06E007DEFD6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E45DDB4F252FA094007DEFD6 /* DateHelpers.swift */,
+				E45DDB54252FA634007DEFD6 /* ColorExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E4BAEC84252D03DE00F3D73C = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 		E4BAEC8F252D03DE00F3D73C /* CovidTraker */ = {
 			isa = PBXGroup;
 			children = (
+				E45DDB4E252FA06E007DEFD6 /* Helpers */,
 				E4F3ACAF252E0D890016B3A8 /* View Controllers */,
 				E4BAECC3252D042300F3D73C /* Models */,
 				E4BAEC90252D03DE00F3D73C /* AppDelegate.swift */,
@@ -442,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E466306A252DAFE700B35C76 /* DataLoader.swift in Sources */,
+				E45DDB55252FA634007DEFD6 /* ColorExtensions.swift in Sources */,
 				E4F3ACB1252E0E010016B3A8 /* LocalAuthDetailsViewController.swift in Sources */,
 				E4BAEC95252D03DE00F3D73C /* LocalAuthoritiesListViewController.swift in Sources */,
 				E4BAECC5252D044E00F3D73C /* LocalAuthorityModel.swift in Sources */,
@@ -449,6 +464,7 @@
 				E4F3ACAB252E071B0016B3A8 /* LocalAuthoritiesListViewModel.swift in Sources */,
 				E4F3AC9A252DB9A00016B3A8 /* SummaryModelTableViewCell.swift in Sources */,
 				E4BAEC93252D03DE00F3D73C /* SceneDelegate.swift in Sources */,
+				E45DDB50252FA094007DEFD6 /* DateHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
