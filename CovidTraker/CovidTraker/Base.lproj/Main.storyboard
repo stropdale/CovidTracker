@@ -315,6 +315,7 @@ Tap here to learn more.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Some Local Authority" largeTitleDisplayMode="always" id="aoT-2A-hiW">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="star" catalog="system" id="gPY-jx-CoQ"/>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="nwM-V7-uei">
                             <connections>
                                 <action selector="doneTapped:" destination="YO0-Oh-D7Y" id="SBA-ps-iP1"/>
@@ -376,6 +377,7 @@ Tap here to learn more.</string>
     <resources>
         <image name="arrow.down" catalog="system" width="120" height="128"/>
         <image name="equal" catalog="system" width="128" height="72"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
