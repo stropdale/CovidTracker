@@ -135,7 +135,7 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DSh-za-j3D">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYf-uV-clm">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
@@ -285,17 +285,19 @@ Tap here to learn more.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P59-gv-oPy">
-                                                <rect key="frame" x="0.0" y="557" width="414" height="146"/>
+                                                <rect key="frame" x="0.0" y="557" width="414" height="243"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                             </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="800" id="UEx-j9-XeA"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="DSh-za-j3D" firstAttribute="top" secondItem="D4M-A3-erN" secondAttribute="top" id="6pz-nx-TSr"/>
                                     <constraint firstItem="DSh-za-j3D" firstAttribute="width" secondItem="D4M-A3-erN" secondAttribute="width" id="FSa-OM-RGN"/>
                                     <constraint firstAttribute="bottom" secondItem="DSh-za-j3D" secondAttribute="bottom" constant="83" id="Iha-He-jgo"/>
-                                    <constraint firstItem="DSh-za-j3D" firstAttribute="height" secondItem="D4M-A3-erN" secondAttribute="height" multiplier="0.894402" id="XuB-Et-eKp"/>
                                     <constraint firstItem="DSh-za-j3D" firstAttribute="leading" secondItem="D4M-A3-erN" secondAttribute="leading" id="cV5-Wa-ge1"/>
                                     <constraint firstAttribute="trailing" secondItem="DSh-za-j3D" secondAttribute="trailing" id="mJl-7t-hM4"/>
                                 </constraints>
