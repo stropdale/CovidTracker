@@ -381,10 +381,17 @@ Tap here to learn more.</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7H-pM-FAv">
-                                                        <rect key="frame" x="16" y="36.5" width="390" height="47"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7H-pM-FAv">
+                                                        <rect key="frame" x="16" y="36.5" width="390" height="202"/>
                                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
-                                                        <string key="text">Cases per 100K? The incidence rate of confirmed Covid-19 cases since 29 June divided by the total population of each Local Authority centre multiplied by 100,000.</string>
+                                                        <string key="text">Cases per 100K?
+The incidence rate of confirmed Covid-19 cases, divided by the total population of each Local Authority centre multiplied by 100,000.
+
+New Cases? 
+New cases reported a given week.
+
+Cumulative cases? 
+The total number of cases since 29 June. As time goes on this number will at best not grow. At worst it will increase significantly week over week and the graph will shoot up hockey stick style. </string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
