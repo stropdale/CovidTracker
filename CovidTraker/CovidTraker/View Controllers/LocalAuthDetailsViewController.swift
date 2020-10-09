@@ -27,6 +27,10 @@ class LocalAuthDetailsViewController: UIViewController {
     @IBOutlet weak var inLockDown: UILabel!
     
     @IBOutlet weak var newCasesChart: AllTimeChart!
+    @IBOutlet weak var newCasesChartLabel: UILabel!
+    
+    @IBOutlet weak var cumulativeCasesChart: AllTimeChart!
+    @IBOutlet weak var cumulativeCasesChartLabel: UILabel!
     
     
     var localAuthModel: LocalAuthorityModel?
@@ -44,6 +48,7 @@ class LocalAuthDetailsViewController: UIViewController {
         setDirection()
         
         setUpNewCasesChart()
+        setUpCumulativeCasesChart()
     }
     
     private func setNewCases() {
@@ -172,11 +177,18 @@ class LocalAuthDetailsViewController: UIViewController {
     
 }
 
-// MARK: - All time chart
+// MARK: - All time charts
 extension LocalAuthDetailsViewController {
     private func setUpNewCasesChart() {
         guard let model = localAuthModel else {
             return
+        }
+        
+        if let str = startEndString() {
+            newCasesChartLabel.text = str
+        }
+        else {
+            newCasesChartLabel.text = "Positive cases per 100k"
         }
         
         var dataPoints = [ChartDataPoint]()
@@ -191,6 +203,40 @@ extension LocalAuthDetailsViewController {
         }
         
         newCasesChart.dataSet(dataSet: dataPoints)
+    }
+    
+    private func setUpCumulativeCasesChart() {
+        guard let model = localAuthModel else {
+            return
+        }
+        
+        if let str = startEndString() {
+            cumulativeCasesChartLabel.text = str
+        }
+        else {
+            cumulativeCasesChartLabel.text = "Positive cases per 100k"
+        }
+        
+        var dataPoints = [ChartDataPoint]()
+        for (i, f) in model.cumulativePositiveCases.enumerated() {
+            let date = DateHelpers.endDateForArrayPosition(position: i)
+            dataPoints.append(ChartDataPoint.init(date: date, value: f))
+        }
+        
+        cumulativeCasesChart.dataSet(dataSet: dataPoints)
+    }
+    
+    private func startEndString() -> String? {
+        guard let model = localAuthModel else {
+            return ""
+        }
+        
+        let start = DateHelpers.endDateStrForArrayPosition(position: 0)
+        let end = DateHelpers.endDateStrForArrayPosition(position: model.cumulativePositiveCases.count - 1)
+        
+        let str = "Positive cases per 100k from \(start) to \(end)"
+        
+        return str
     }
 }
 

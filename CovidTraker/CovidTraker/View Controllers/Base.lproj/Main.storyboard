@@ -128,14 +128,14 @@
             <objects>
                 <viewController storyboardIdentifier="LocalAuthDetailsViewController" id="YO0-Oh-D7Y" customClass="LocalAuthDetailsViewController" customModule="CovidTraker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="utV-1u-lcs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1146"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4M-A3-erN">
-                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="1090"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DSh-za-j3D">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jva-c7-8lQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -305,14 +305,14 @@ Tap here to learn more.</string>
                                                 <rect key="frame" x="0.0" y="357" width="414" height="300"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blah blah blah" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGL-B0-fpS">
-                                                        <rect key="frame" x="16" y="0.0" width="380" height="18"/>
+                                                        <rect key="frame" x="16" y="0.0" width="380" height="16"/>
                                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05g-wT-SE5" customClass="AllTimeChart" customModule="CovidTraker" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="26" width="380" height="266"/>
+                                                        <rect key="frame" x="16" y="16" width="380" height="276"/>
                                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                     </view>
                                                 </subviews>
@@ -324,17 +324,61 @@ Tap here to learn more.</string>
                                                     <constraint firstItem="mGL-B0-fpS" firstAttribute="leading" secondItem="NbA-Au-Kp5" secondAttribute="leading" constant="16" id="OhC-2d-neH"/>
                                                     <constraint firstAttribute="bottom" secondItem="05g-wT-SE5" secondAttribute="bottom" constant="8" id="P9g-Qp-csw"/>
                                                     <constraint firstItem="mGL-B0-fpS" firstAttribute="top" secondItem="NbA-Au-Kp5" secondAttribute="top" id="PNB-NC-rqV"/>
-                                                    <constraint firstItem="05g-wT-SE5" firstAttribute="top" secondItem="mGL-B0-fpS" secondAttribute="bottom" constant="8" symbolic="YES" id="Ysm-g6-fVR"/>
+                                                    <constraint firstItem="05g-wT-SE5" firstAttribute="top" secondItem="mGL-B0-fpS" secondAttribute="bottom" id="Ysm-g6-fVR"/>
                                                     <constraint firstItem="05g-wT-SE5" firstAttribute="leading" secondItem="NbA-Au-Kp5" secondAttribute="leading" constant="16" id="dhr-DE-oH7"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D7K-EB-G0S">
+                                                <rect key="frame" x="0.0" y="657" width="414" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cumulative Cases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVO-ws-7Ik">
+                                                        <rect key="frame" x="16" y="16" width="146.5" height="34"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="KVO-ws-7Ik" firstAttribute="top" secondItem="D7K-EB-G0S" secondAttribute="top" constant="16" id="DKY-L2-gDE"/>
+                                                    <constraint firstItem="KVO-ws-7Ik" firstAttribute="leading" secondItem="D7K-EB-G0S" secondAttribute="leading" constant="16" id="HTb-sz-EMj"/>
+                                                    <constraint firstAttribute="bottom" secondItem="KVO-ws-7Ik" secondAttribute="bottom" id="rAo-Xh-0Bn"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sM5-ji-r6g">
+                                                <rect key="frame" x="0.0" y="707" width="414" height="300"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blah blah blah" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mq-Aj-O3V">
+                                                        <rect key="frame" x="16" y="0.0" width="380" height="16"/>
+                                                        <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="or6-Db-6BI" customClass="AllTimeChart" customModule="CovidTraker" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="16" width="380" height="276"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="7mq-Aj-O3V" secondAttribute="trailing" constant="18" id="7bh-ce-Lky"/>
+                                                    <constraint firstItem="or6-Db-6BI" firstAttribute="top" secondItem="7mq-Aj-O3V" secondAttribute="bottom" id="9vQ-4t-GX4"/>
+                                                    <constraint firstItem="or6-Db-6BI" firstAttribute="leading" secondItem="sM5-ji-r6g" secondAttribute="leading" constant="16" id="MoK-5L-5Og"/>
+                                                    <constraint firstAttribute="bottom" secondItem="or6-Db-6BI" secondAttribute="bottom" constant="8" id="VHG-Vw-aQZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="or6-Db-6BI" secondAttribute="trailing" constant="18" id="jt8-sb-vVC"/>
+                                                    <constraint firstItem="7mq-Aj-O3V" firstAttribute="leading" secondItem="sM5-ji-r6g" secondAttribute="leading" constant="16" id="lga-Cz-jPz"/>
+                                                    <constraint firstItem="7mq-Aj-O3V" firstAttribute="top" secondItem="sM5-ji-r6g" secondAttribute="top" id="wkz-bx-v64"/>
+                                                    <constraint firstAttribute="height" constant="300" id="xxC-Dd-Xyt"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P59-gv-oPy">
-                                                <rect key="frame" x="0.0" y="657" width="414" height="143"/>
+                                                <rect key="frame" x="0.0" y="1007" width="414" height="193"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="800" id="UEx-j9-XeA"/>
+                                            <constraint firstAttribute="height" constant="1200" id="UEx-j9-XeA"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -366,21 +410,25 @@ Tap here to learn more.</string>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <size key="freeformSize" width="414" height="1200"/>
                     <connections>
                         <outlet property="changeDirectionLabel" destination="AyO-9Z-4Gm" id="2kD-Lb-wEn"/>
+                        <outlet property="cumulativeCasesChart" destination="or6-Db-6BI" id="nGb-5M-WBi"/>
+                        <outlet property="cumulativeCasesChartLabel" destination="7mq-Aj-O3V" id="HaS-i2-Clu"/>
                         <outlet property="cumulativeCasesDescLabel" destination="SYT-Nz-6Rc" id="MS0-Kd-FbH"/>
                         <outlet property="cumulativeCasesStatsLabel" destination="1Ex-l5-00C" id="PWm-fm-W7C"/>
                         <outlet property="directionArrow" destination="Or0-H4-VB2" id="QLp-oU-F3V"/>
                         <outlet property="directionDescLabel" destination="AyO-9Z-4Gm" id="vAO-zH-er9"/>
                         <outlet property="inLockDown" destination="L4c-MR-cG6" id="A7d-E1-thx"/>
                         <outlet property="newCasesChart" destination="05g-wT-SE5" id="d6t-bP-pww"/>
+                        <outlet property="newCasesChartLabel" destination="mGL-B0-fpS" id="9Yl-s6-vpx"/>
                         <outlet property="newCasesDescLabel" destination="9fi-bC-Tn3" id="yxG-B0-eqe"/>
                         <outlet property="newCasesStatsLabel" destination="L0e-ob-fFX" id="97v-oU-YOj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4Q-Cz-KY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2755.072463768116" y="79.6875"/>
+            <point key="canvasLocation" x="2725" y="181"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p7C-sT-B1k">
