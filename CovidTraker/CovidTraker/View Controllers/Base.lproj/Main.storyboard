@@ -311,7 +311,7 @@ Tap here to learn more.</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05g-wT-SE5">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05g-wT-SE5" customClass="AllTimeChart" customModule="CovidTraker" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="26" width="380" height="266"/>
                                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                     </view>
@@ -373,6 +373,7 @@ Tap here to learn more.</string>
                         <outlet property="directionArrow" destination="Or0-H4-VB2" id="QLp-oU-F3V"/>
                         <outlet property="directionDescLabel" destination="AyO-9Z-4Gm" id="vAO-zH-er9"/>
                         <outlet property="inLockDown" destination="L4c-MR-cG6" id="A7d-E1-thx"/>
+                        <outlet property="newCasesChart" destination="05g-wT-SE5" id="d6t-bP-pww"/>
                         <outlet property="newCasesDescLabel" destination="9fi-bC-Tn3" id="yxG-B0-eqe"/>
                         <outlet property="newCasesStatsLabel" destination="L0e-ob-fFX" id="97v-oU-YOj"/>
                     </connections>

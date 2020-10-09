@@ -2,7 +2,6 @@
  {
    "localAuthorityName": "Barking and Dagenham",
    "specialMeasuresLink": "",
-   "w30": 425,
    "w31": 348.6,
    "w32": 361.8,
    "w33": 368.9,
@@ -18,7 +17,6 @@
  {
    "localAuthorityName": "Barnet",
    "specialMeasuresLink": "",
-   "w30": 561,
    "w31": 422,
    "w32": 431.5,
    "w33": 439.6,
@@ -34,7 +32,6 @@
  {
    "localAuthorityName": "Barnsley",
    "specialMeasuresLink": "",
-   "w30": 1387,
    "w31": 805.9,
    "w32": 817.7,
    "w33": 830.4,
@@ -50,7 +47,6 @@
  {
    "localAuthorityName": "Bath and North East Somerset",
    "specialMeasuresLink": "",
-   "w30": 156,
    "w31": 181.2,
    "w32": 184.3,
    "w33": 186.4,
@@ -66,7 +62,6 @@
  {
    "localAuthorityName": "Bedford",
    "specialMeasuresLink": "",
-   "w30": 1340,
    "w31": 775.5,
    "w32": 795.9,
    "w33": 808.2,
@@ -82,7 +77,6 @@
  {
    "localAuthorityName": "Bexley",
    "specialMeasuresLink": "",
-   "w30": 485,
    "w31": 442.9,
    "w32": 448.1,
    "w33": 452.2,
@@ -98,7 +92,6 @@
  {
    "localAuthorityName": "Birmingham",
    "specialMeasuresLink": "https://www.gov.uk/guidance/birmingham-sandwell-and-solihull-local-restrictions",
-   "w30": 1227,
    "w31": 453.8,
    "w32": 466.1,
    "w33": 488.4,
@@ -114,7 +107,6 @@
  {
    "localAuthorityName": "Blackburn with Darwen",
    "specialMeasuresLink": "https://www.gov.uk/guidance/north-west-england-local-restrictions",
-   "w30": 7923,
    "w31": 899.7,
    "w32": 982.9,
    "w33": 1060.1,
@@ -130,7 +122,6 @@
  {
    "localAuthorityName": "Blackpool",
    "specialMeasuresLink": "https://www.gov.uk/guidance/north-west-england-local-restrictions",
-   "w30": 287,
    "w31": 748,
    "w32": 755.2,
    "w33": 763.8,
@@ -146,7 +137,6 @@
  {
    "localAuthorityName": "Bolton",
    "specialMeasuresLink": "https://www.gov.uk/guidance/greater-manchester-local-restrictions",
-   "w30": 1472,
    "w31": 685.4,
    "w32": 707.5,
    "w33": 738,
@@ -162,7 +152,6 @@
  {
    "localAuthorityName": "Bournemouth, Christchurch and Poole",
    "specialMeasuresLink": "",
-   "w30": 202,
    "w31": 210.5,
    "w32": 210.7,
    "w33": 213.5,
@@ -178,7 +167,6 @@
  {
    "localAuthorityName": "Bracknell Forest",
    "specialMeasuresLink": "",
-   "w30": 247,
    "w31": 318.1,
    "w32": 321.4,
    "w33": 321.4,
@@ -194,7 +182,6 @@
  {
    "localAuthorityName": "Bradford",
    "specialMeasuresLink": "https://www.gov.uk/guidance/west-yorkshire-local-restrictions",
-   "w30": 3965,
    "w31": 911.8,
    "w32": 964.3,
    "w33": 1021.8,
@@ -210,7 +197,6 @@
  {
    "localAuthorityName": "Brent",
    "specialMeasuresLink": "",
-   "w30": 151,
    "w31": 540.2,
    "w32": 547.8,
    "w33": 553.5,
@@ -226,7 +212,6 @@
  {
    "localAuthorityName": "Brighton and Hove",
    "specialMeasuresLink": "",
-   "w30": 275,
    "w31": 277.9,
    "w32": 281,
    "w33": 284.4,
@@ -242,7 +227,6 @@
  {
    "localAuthorityName": "Bristol, City of",
    "specialMeasuresLink": "",
-   "w30": 173,
    "w31": 286.1,
    "w32": 290.5,
    "w33": 295,
@@ -258,7 +242,6 @@
  {
    "localAuthorityName": "Bromley",
    "specialMeasuresLink": "",
-   "w30": 151,
    "w31": 462.7,
    "w32": 465.4,
    "w33": 470.6,
@@ -274,7 +257,6 @@
  {
    "localAuthorityName": "Buckinghamshire",
    "specialMeasuresLink": "",
-   "w30": 296,
    "w31": 320.5,
    "w32": 325.9,
    "w33": 330.2,
@@ -290,7 +272,6 @@
  {
    "localAuthorityName": "Bury",
    "specialMeasuresLink": "https://www.gov.uk/guidance/greater-manchester-local-restrictions",
-   "w30": 999,
    "w31": 699.1,
    "w32": 718,
    "w33": 744.8,
@@ -306,7 +287,6 @@
  {
    "localAuthorityName": "Calderdale",
    "specialMeasuresLink": "https://www.gov.uk/guidance/west-yorkshire-local-restrictions",
-   "w30": 2094,
    "w31": 392.2,
    "w32": 431.7,
    "w33": 478.4,
@@ -322,7 +302,6 @@
  {
    "localAuthorityName": "Cambridgeshire",
    "specialMeasuresLink": "",
-   "w30": 460,
    "w31": 352,
    "w32": 357,
    "w33": 361.8,
@@ -338,7 +317,6 @@
  {
    "localAuthorityName": "Camden",
    "specialMeasuresLink": "",
-   "w30": 229,
    "w31": 273.4,
    "w32": 277.2,
    "w33": 283.7,
@@ -354,7 +332,6 @@
  {
    "localAuthorityName": "Central Bedfordshire",
    "specialMeasuresLink": "",
-   "w30": 599,
    "w31": 446.4,
    "w32": 452.4,
    "w33": 457.3,
@@ -370,7 +347,6 @@
  {
    "localAuthorityName": "Cheshire East",
    "specialMeasuresLink": "",
-   "w30": 499,
    "w31": 586.2,
    "w32": 593.5,
    "w33": 600.9,
@@ -386,7 +362,6 @@
  {
    "localAuthorityName": "Cheshire West and Chester",
    "specialMeasuresLink": "",
-   "w30": 558,
    "w31": 596.5,
    "w32": 603.2,
    "w33": 609.4,
@@ -402,7 +377,6 @@
  {
    "localAuthorityName": "Cornwall and Isles of Scilly",
    "specialMeasuresLink": "",
-   "w30": 53,
    "w31": 162.4,
    "w32": 164.2,
    "w33": 166.7,
@@ -418,7 +392,6 @@
  {
    "localAuthorityName": "County Durham",
    "specialMeasuresLink": "https://www.gov.uk/guidance/north-east-of-england-local-restrictions",
-   "w30": 209,
    "w31": 635.9,
    "w32": 638.5,
    "w33": 640.8,
@@ -434,7 +407,6 @@
  {
    "localAuthorityName": "Coventry",
    "specialMeasuresLink": "",
-   "w30": 627,
    "w31": 381.2,
    "w32": 395.6,
    "w33": 410.9,
@@ -450,7 +422,6 @@
  {
    "localAuthorityName": "Croydon",
    "specialMeasuresLink": "",
-   "w30": 104,
    "w31": 487.1,
    "w32": 490.7,
    "w33": 495.1,
@@ -466,7 +437,6 @@
  {
    "localAuthorityName": "Cumbria",
    "specialMeasuresLink": "",
-   "w30": 1042,
    "w31": 561.5,
    "w32": 574.3,
    "w33": 585.7,
@@ -482,7 +452,6 @@
  {
    "localAuthorityName": "Darlington",
    "specialMeasuresLink": "",
-   "w30": 282,
    "w31": 571.5,
    "w32": 572.4,
    "w33": 577.1,
@@ -498,7 +467,6 @@
  {
    "localAuthorityName": "Derby",
    "specialMeasuresLink": "",
-   "w30": 583,
    "w31": 511.7,
    "w32": 519.5,
    "w33": 525.3,
@@ -514,7 +482,6 @@
  {
    "localAuthorityName": "Derbyshire",
    "specialMeasuresLink": "",
-   "w30": 276,
    "w31": 429.1,
    "w32": 434.3,
    "w33": 440.3,
@@ -530,7 +497,6 @@
  {
    "localAuthorityName": "Devon",
    "specialMeasuresLink": "",
-   "w30": 201,
    "w31": 155.3,
    "w32": 157.3,
    "w33": 158.3,
@@ -546,7 +512,6 @@
  {
    "localAuthorityName": "Doncaster",
    "specialMeasuresLink": "",
-   "w30": 515,
    "w31": 652.1,
    "w32": 655,
    "w33": 659.2,
@@ -562,7 +527,6 @@
  {
    "localAuthorityName": "Dorset",
    "specialMeasuresLink": "",
-   "w30": 106,
    "w31": 163.1,
    "w32": 164.7,
    "w33": 167.1,
@@ -578,7 +542,6 @@
  {
    "localAuthorityName": "Dudley",
    "specialMeasuresLink": "",
-   "w30": 125,
    "w31": 415.1,
    "w32": 418.2,
    "w33": 423.6,
@@ -594,7 +557,6 @@
  {
    "localAuthorityName": "Ealing",
    "specialMeasuresLink": "",
-   "w30": 263,
    "w31": 468.7,
    "w32": 476.3,
    "w33": 485.7,
@@ -610,7 +572,6 @@
  {
    "localAuthorityName": "East Riding of Yorkshire",
    "specialMeasuresLink": "",
-   "w30": 88,
    "w31": 486.4,
    "w32": 487.9,
    "w33": 489.1,
@@ -626,7 +587,6 @@
  {
    "localAuthorityName": "East Sussex",
    "specialMeasuresLink": "",
-   "w30": 649,
    "w31": 288.9,
    "w32": 294.3,
    "w33": 296.3,
@@ -642,7 +602,6 @@
  {
    "localAuthorityName": "Enfield",
    "specialMeasuresLink": "",
-   "w30": 479,
    "w31": 362.1,
    "w32": 369,
    "w33": 374.4,
@@ -658,7 +617,6 @@
  {
    "localAuthorityName": "Essex",
    "specialMeasuresLink": "",
-   "w30": 494,
    "w31": 381.7,
    "w32": 386.6,
    "w33": 390.5,
@@ -674,7 +632,6 @@
  {
    "localAuthorityName": "Gateshead",
    "specialMeasuresLink": "https://www.gov.uk/guidance/north-east-of-england-local-restrictions",
-   "w30": 247,
    "w31": 636,
    "w32": 640.5,
    "w33": 645.4,
@@ -690,7 +647,6 @@
  {
    "localAuthorityName": "Gloucestershire",
    "specialMeasuresLink": "",
-   "w30": 158,
    "w31": 295,
    "w32": 297.2,
    "w33": 302.3,
@@ -706,7 +662,6 @@
  {
    "localAuthorityName": "Greenwich",
    "specialMeasuresLink": "",
-   "w30": 175,
    "w31": 343.5,
    "w32": 348.4,
    "w33": 353.3,
@@ -722,7 +677,6 @@
  {
    "localAuthorityName": "Hackney and City of London",
    "specialMeasuresLink": "",
-   "w30": 1526,
    "w31": 320.1,
    "w32": 341.9,
    "w33": 353.4,
@@ -738,7 +692,6 @@
  {
    "localAuthorityName": "Halton",
    "specialMeasuresLink": "https://www.gov.uk/guidance/merseyside-halton-and-warrington-local-restrictions",
-   "w30": 234,
    "w31": 545,
    "w32": 548.2,
    "w33": 559.1,
@@ -754,7 +707,6 @@
  {
    "localAuthorityName": "Hammersmith and Fulham",
    "specialMeasuresLink": "",
-   "w30": 108,
    "w31": 421.2,
    "w32": 427.7,
    "w33": 441.2,
@@ -770,7 +722,6 @@
  {
    "localAuthorityName": "Hampshire",
    "specialMeasuresLink": "",
-   "w30": 138,
    "w31": 369.5,
    "w32": 372.4,
    "w33": 374.5,
@@ -786,7 +737,6 @@
  {
    "localAuthorityName": "Haringey",
    "specialMeasuresLink": "",
-   "w30": 517,
    "w31": 291.2,
    "w32": 298.6,
    "w33": 304.1,
@@ -802,7 +752,6 @@
  {
    "localAuthorityName": "Harrow",
    "specialMeasuresLink": "",
-   "w30": 240,
    "w31": 523.7,
    "w32": 532.1,
    "w33": 536.5,
@@ -818,7 +767,6 @@
  {
    "localAuthorityName": "Hartlepool",
    "specialMeasuresLink": "",
-   "w30": 429,
    "w31": 654.2,
    "w32": 661.7,
    "w33": 668.2,
@@ -834,7 +782,6 @@
  {
    "localAuthorityName": "Havering",
    "specialMeasuresLink": "",
-   "w30": 621,
    "w31": 381.7,
    "w32": 390.6,
    "w33": 396.4,
@@ -850,7 +797,6 @@
  {
    "localAuthorityName": "Herefordshire, County of",
    "specialMeasuresLink": "",
-   "w30": 2394,
    "w31": 455.5,
    "w32": 461.2,
    "w33": 464.9,
@@ -866,7 +812,6 @@
  {
    "localAuthorityName": "Hertfordshire",
    "specialMeasuresLink": "",
-   "w30": 296,
    "w31": 359.3,
    "w32": 364.7,
    "w33": 371.1,
@@ -882,7 +827,6 @@
  {
    "localAuthorityName": "Hillingdon",
    "specialMeasuresLink": "",
-   "w30": 394,
    "w31": 374.6,
    "w32": 379.6,
    "w33": 388.1,
@@ -898,7 +842,6 @@
  {
    "localAuthorityName": "Hounslow",
    "specialMeasuresLink": "",
-   "w30": 369,
    "w31": 407.3,
    "w32": 418.4,
    "w33": 432.5,
@@ -914,7 +857,6 @@
  {
    "localAuthorityName": "Isle of Wight",
    "specialMeasuresLink": "",
-   "w30": 0,
    "w31": 297.5,
    "w32": 298.9,
    "w33": 301,
@@ -930,7 +872,6 @@
  {
    "localAuthorityName": "Islington",
    "specialMeasuresLink": "",
-   "w30": 293,
    "w31": 241.7,
    "w32": 245.9,
    "w33": 252.6,
@@ -946,7 +887,6 @@
  {
    "localAuthorityName": "Kensington and Chelsea",
    "specialMeasuresLink": "",
-   "w30": 192,
    "w31": 372.6,
    "w32": 377.1,
    "w33": 385.4,
@@ -962,7 +902,6 @@
  {
    "localAuthorityName": "Kent",
    "specialMeasuresLink": "",
-   "w30": 822,
    "w31": 515.5,
    "w32": 523.3,
    "w33": 528.7,
@@ -978,7 +917,6 @@
  {
    "localAuthorityName": "Kingston upon Hull, City of",
    "specialMeasuresLink": "",
-   "w30": 575,
    "w31": 602.4,
    "w32": 605,
    "w33": 606.6,
@@ -994,7 +932,6 @@
  {
    "localAuthorityName": "Kingston upon Thames",
    "specialMeasuresLink": "",
-   "w30": 285,
    "w31": 428,
    "w32": 429.7,
    "w33": 437.7,
@@ -1010,7 +947,6 @@
  {
    "localAuthorityName": "Kirklees",
    "specialMeasuresLink": "https://www.gov.uk/guidance/west-yorkshire-local-restrictions",
-   "w30": 2804,
    "w31": 544.1,
    "w32": 568,
    "w33": 598.3,
@@ -1026,7 +962,6 @@
  {
    "localAuthorityName": "Knowsley",
    "specialMeasuresLink": "https://www.gov.uk/guidance/merseyside-halton-and-warrington-local-restrictions",
-   "w30": 334,
    "w31": 672.6,
    "w32": 681.3,
    "w33": 698.7,
@@ -1042,7 +977,6 @@
  {
    "localAuthorityName": "Lambeth",
    "specialMeasuresLink": "",
-   "w30": 276,
    "w31": 428,
    "w32": 436.9,
    "w33": 447.7,
@@ -1058,7 +992,6 @@
  {
    "localAuthorityName": "Lancashire",
    "specialMeasuresLink": "https://www.gov.uk/guidance/north-west-england-local-restrictions",
-   "w30": 934,
    "w31": 581.8,
    "w32": 598.6,
    "w33": 621.7,
@@ -1074,7 +1007,6 @@
  {
    "localAuthorityName": "Leeds",
    "specialMeasuresLink": "https://www.gov.uk/guidance/west-yorkshire-local-restrictions",
-   "w30": 608,
    "w31": 477.2,
    "w32": 494.2,
    "w33": 508,
@@ -1090,7 +1022,6 @@
  {
    "localAuthorityName": "Leicester",
    "specialMeasuresLink": "https://www.gov.uk/guidance/leicester-lockdown-what-you-can-and-cannot-do",
-   "w30": 7010,
    "w31": 1361.1,
    "w32": 1422.8,
    "w33": 1488.4,
@@ -1106,7 +1037,6 @@
  {
    "localAuthorityName": "Leicestershire",
    "specialMeasuresLink": "",
-   "w30": 1146,
    "w31": 467,
    "w32": 480.8,
    "w33": 488.4,
@@ -1122,7 +1052,6 @@
  {
    "localAuthorityName": "Lewisham",
    "specialMeasuresLink": "",
-   "w30": 428,
    "w31": 405.9,
    "w32": 412.1,
    "w33": 418.1,
@@ -1138,7 +1067,6 @@
  {
    "localAuthorityName": "Lincolnshire",
    "specialMeasuresLink": "",
-   "w30": 318,
    "w31": 331.3,
    "w32": 335.7,
    "w33": 341.6,
@@ -1154,7 +1082,6 @@
  {
    "localAuthorityName": "Liverpool",
    "specialMeasuresLink": "https://www.gov.uk/guidance/merseyside-halton-and-warrington-local-restrictions",
-   "w30": 283,
    "w31": 509.3,
    "w32": 523.4,
    "w33": 535.2,
@@ -1170,7 +1097,6 @@
  {
    "localAuthorityName": "Luton",
    "specialMeasuresLink": "",
-   "w30": 2756,
    "w31": 721.6,
    "w32": 743.6,
    "w33": 771.6,
@@ -1186,7 +1112,6 @@
  {
    "localAuthorityName": "Manchester",
    "specialMeasuresLink": "https://www.gov.uk/guidance/greater-manchester-local-restrictions",
-   "w30": 1297,
    "w31": 579.6,
    "w32": 616.3,
    "w33": 656.7,
@@ -1202,7 +1127,6 @@
  {
    "localAuthorityName": "Medway",
    "specialMeasuresLink": "",
-   "w30": 216,
    "w31": 390.5,
    "w32": 396.6,
    "w33": 398.1,
@@ -1218,7 +1142,6 @@
  {
    "localAuthorityName": "Merton",
    "specialMeasuresLink": "",
-   "w30": 291,
    "w31": 463.7,
    "w32": 468,
    "w33": 472.9,
@@ -1234,7 +1157,6 @@
  {
    "localAuthorityName": "Middlesbrough",
    "specialMeasuresLink": "",
-   "w30": 569,
    "w31": 689.5,
    "w32": 695.9,
    "w33": 723.6,
@@ -1250,7 +1172,6 @@
  {
    "localAuthorityName": "Milton Keynes",
    "specialMeasuresLink": "",
-   "w30": 74,
    "w31": 324.3,
    "w32": 328.4,
    "w33": 336.9,
@@ -1266,7 +1187,6 @@
  {
    "localAuthorityName": "Newcastle upon Tyne",
    "specialMeasuresLink": "https://www.gov.uk/guidance/north-east-of-england-local-restrictions",
-   "w30": 366,
    "w31": 514.7,
    "w32": 518,
    "w33": 524,
@@ -1282,7 +1202,6 @@
  {
    "localAuthorityName": "Newham",
    "specialMeasuresLink": "",
-   "w30": 597,
    "w31": 373.9,
    "w32": 381.2,
    "w33": 389.8,
@@ -1298,7 +1217,6 @@
  {
    "localAuthorityName": "Norfolk",
    "specialMeasuresLink": "",
-   "w30": 77,
    "w31": 320.3,
    "w32": 322.4,
    "w33": 325.9,
@@ -1314,7 +1232,6 @@
  {
    "localAuthorityName": "North East Lincolnshire",
    "specialMeasuresLink": "",
-   "w30": 313,
    "w31": 134.5,
    "w32": 136.4,
    "w33": 137.7,
@@ -1330,7 +1247,6 @@
  {
    "localAuthorityName": "North Lincolnshire",
    "specialMeasuresLink": "",
-   "w30": 291,
    "w31": 426.2,
    "w32": 428.5,
    "w33": 429.6,
@@ -1346,7 +1262,6 @@
  {
    "localAuthorityName": "North Somerset",
    "specialMeasuresLink": "",
-   "w30": 187,
    "w31": 425.4,
    "w32": 427.3,
    "w33": 431.5,
@@ -1362,7 +1277,6 @@
  {
    "localAuthorityName": "North Tyneside",
    "specialMeasuresLink": "https://www.gov.uk/guidance/north-east-of-england-local-restrictions",
-   "w30": 97,
    "w31": 450,
    "w32": 451.5,
    "w33": 455.4,
@@ -1378,7 +1292,6 @@
  {
    "localAuthorityName": "North Yorkshire",
    "specialMeasuresLink": "",
-   "w30": 163,
    "w31": 416.9,
    "w32": 420.7,
    "w33": 424.6,
@@ -1394,7 +1307,6 @@
  {
    "localAuthorityName": "Northamptonshire",
    "specialMeasuresLink": "",
-   "w30": 1364,
    "w31": 464.1,
    "w32": 480.5,
    "w33": 501.1,
@@ -1410,7 +1322,6 @@
  {
    "localAuthorityName": "Northumberland",
    "specialMeasuresLink": "https://www.gov.uk/guidance/north-east-of-england-local-restrictions",
-   "w30": 156,
    "w31": 496.5,
    "w32": 497.4,
    "w33": 499.3,
@@ -1426,7 +1337,6 @@
  {
    "localAuthorityName": "Nottingham",
    "specialMeasuresLink": "",
-   "w30": 453,
    "w31": 364,
    "w32": 372.1,
    "w33": 377.6,
@@ -1442,7 +1352,6 @@
  {
    "localAuthorityName": "Nottinghamshire",
    "specialMeasuresLink": "",
-   "w30": 328,
    "w31": 370.9,
    "w32": 377.1,
    "w33": 385.1,
@@ -1458,7 +1367,6 @@
  {
    "localAuthorityName": "Oldham",
    "specialMeasuresLink": "https://www.gov.uk/guidance/greater-manchester-local-restrictions",
-   "w30": 1825,
    "w31": 872.6,
    "w32": 933.7,
    "w33": 1042.3,
@@ -1474,7 +1382,6 @@
  {
    "localAuthorityName": "Oxfordshire",
    "specialMeasuresLink": "",
-   "w30": 349,
    "w31": 468.1,
    "w32": 474.2,
    "w33": 481.6,
@@ -1490,7 +1397,6 @@
  {
    "localAuthorityName": "Peterborough",
    "specialMeasuresLink": "",
-   "w30": 1741,
    "w31": 711.3,
    "w32": 735.2,
    "w33": 752.1,
@@ -1506,7 +1412,6 @@
  {
    "localAuthorityName": "Plymouth",
    "specialMeasuresLink": "",
-   "w30": 152,
    "w31": 255,
    "w32": 257.7,
    "w33": 259.6,
@@ -1522,7 +1427,6 @@
  {
    "localAuthorityName": "Portsmouth",
    "specialMeasuresLink": "",
-   "w30": 186,
    "w31": 236.1,
    "w32": 238.5,
    "w33": 241.7,
@@ -1538,7 +1442,6 @@
  {
    "localAuthorityName": "Reading",
    "specialMeasuresLink": "",
-   "w30": 490,
    "w31": 489.6,
    "w32": 493.9,
    "w33": 498.8,
@@ -1554,7 +1457,6 @@
  {
    "localAuthorityName": "Redbridge",
    "specialMeasuresLink": "",
-   "w30": 625,
    "w31": 379.5,
    "w32": 388.3,
    "w33": 399.5,
@@ -1570,7 +1472,6 @@
  {
    "localAuthorityName": "Redcar and Cleveland",
    "specialMeasuresLink": "",
-   "w30": 293,
    "w31": 516.4,
    "w32": 520.1,
    "w33": 520.1,
@@ -1586,7 +1487,6 @@
  {
    "localAuthorityName": "Richmond upon Thames",
    "specialMeasuresLink": "",
-   "w30": 152,
    "w31": 278.3,
    "w32": 282.4,
    "w33": 287.5,
@@ -1602,7 +1502,6 @@
  {
    "localAuthorityName": "Rochdale",
    "specialMeasuresLink": "https://www.gov.uk/guidance/greater-manchester-local-restrictions",
-   "w30": 4727,
    "w31": 834.5,
    "w32": 867.7,
    "w33": 913.6,
@@ -1618,7 +1517,6 @@
  {
    "localAuthorityName": "Rotherham",
    "specialMeasuresLink": "",
-   "w30": 2305,
    "w31": 762.8,
    "w32": 774.6,
    "w33": 789.7,
@@ -1634,7 +1532,6 @@
  {
    "localAuthorityName": "Rutland",
    "specialMeasuresLink": "",
-   "w30": 1008,
    "w31": 251.9,
    "w32": 251.9,
    "w33": 257,
@@ -1650,7 +1547,6 @@
  {
    "localAuthorityName": "Salford",
    "specialMeasuresLink": "https://www.gov.uk/guidance/greater-manchester-local-restrictions",
-   "w30": 1061,
    "w31": 559.7,
    "w32": 590,
    "w33": 617.5,
@@ -1666,7 +1562,6 @@
  {
    "localAuthorityName": "Sandwell",
    "specialMeasuresLink": "https://www.gov.uk/guidance/birmingham-sandwell-and-solihull-local-restrictions",
-   "w30": 2260,
    "w31": 561.1,
    "w32": 578.8,
    "w33": 605.4,
@@ -1682,7 +1577,6 @@
  {
    "localAuthorityName": "Sefton",
    "specialMeasuresLink": "https://www.gov.uk/guidance/merseyside-halton-and-warrington-local-restrictions",
-   "w30": 690,
    "w31": 567.2,
    "w32": 572.3,
    "w33": 578.8,
@@ -1698,7 +1592,6 @@
  {
    "localAuthorityName": "Sheffield",
    "specialMeasuresLink": "",
-   "w30": 1116,
    "w31": 725,
    "w32": 741.6,
    "w33": 756.7,
@@ -1714,7 +1607,6 @@
  {
    "localAuthorityName": "Shropshire",
    "specialMeasuresLink": "",
-   "w30": 62,
    "w31": 446.2,
    "w32": 451.5,
    "w33": 452.7,
@@ -1730,7 +1622,6 @@
  {
    "localAuthorityName": "Slough",
    "specialMeasuresLink": "",
-   "w30": 469,
    "w31": 439.9,
    "w32": 454.7,
    "w33": 472.1,
@@ -1746,7 +1637,6 @@
  {
    "localAuthorityName": "Solihull",
    "specialMeasuresLink": "https://www.gov.uk/guidance/birmingham-sandwell-and-solihull-local-restrictions",
-   "w30": 884,
    "w31": 429,
    "w32": 436,
    "w33": 446.2,
@@ -1762,7 +1652,6 @@
  {
    "localAuthorityName": "Somerset",
    "specialMeasuresLink": "",
-   "w30": 143,
    "w31": 232.8,
    "w32": 234.9,
    "w33": 237.4,
@@ -1778,7 +1667,6 @@
  {
    "localAuthorityName": "South Gloucestershire",
    "specialMeasuresLink": "",
-   "w30": 212,
    "w31": 267.1,
    "w32": 269.6,
    "w33": 274.6,
@@ -1794,7 +1682,6 @@
  {
    "localAuthorityName": "South Tyneside",
    "specialMeasuresLink": "https://www.gov.uk/guidance/north-east-of-england-local-restrictions",
-   "w30": 67,
    "w31": 634.2,
    "w32": 636.2,
    "w33": 640.2,
@@ -1810,7 +1697,6 @@
  {
    "localAuthorityName": "Southampton",
    "specialMeasuresLink": "",
-   "w30": 119,
    "w31": 379,
    "w32": 381.3,
    "w33": 385.7,
@@ -1826,7 +1712,6 @@
  {
    "localAuthorityName": "Southend-on-Sea",
    "specialMeasuresLink": "",
-   "w30": 822,
    "w31": 384.7,
    "w32": 389.7,
    "w33": 394.1,
@@ -1842,7 +1727,6 @@
  {
    "localAuthorityName": "Southwark",
    "specialMeasuresLink": "",
-   "w30": 315,
    "w31": 466.8,
    "w32": 471.9,
    "w33": 476.6,
@@ -1858,7 +1742,6 @@
  {
    "localAuthorityName": "St. Helens",
    "specialMeasuresLink": "https://www.gov.uk/guidance/merseyside-halton-and-warrington-local-restrictions",
-   "w30": 167,
    "w31": 668.2,
    "w32": 671.5,
    "w33": 688.2,
@@ -1874,7 +1757,6 @@
  {
    "localAuthorityName": "Staffordshire",
    "specialMeasuresLink": "",
-   "w30": 537,
    "w31": 437,
    "w32": 442.5,
    "w33": 448.3,
@@ -1890,7 +1772,6 @@
  {
    "localAuthorityName": "Stockport",
    "specialMeasuresLink": "https://www.gov.uk/guidance/greater-manchester-local-restrictions",
-   "w30": 788,
    "w31": 586.4,
    "w32": 611.8,
    "w33": 637.8,
@@ -1906,7 +1787,6 @@
  {
    "localAuthorityName": "Stockton-on-Tees",
    "specialMeasuresLink": "",
-   "w30": 152,
    "w31": 493.9,
    "w32": 500,
    "w33": 504,
@@ -1922,7 +1802,6 @@
  {
    "localAuthorityName": "Stoke-on-Trent",
    "specialMeasuresLink": "",
-   "w30": 469,
    "w31": 582,
    "w32": 586.3,
    "w33": 602.7,
@@ -1938,7 +1817,6 @@
  {
    "localAuthorityName": "Suffolk",
    "specialMeasuresLink": "",
-   "w30": 119,
    "w31": 352,
    "w32": 355.2,
    "w33": 359.1,
@@ -1954,7 +1832,6 @@
  {
    "localAuthorityName": "Sunderland",
    "specialMeasuresLink": "https://www.gov.uk/guidance/north-east-of-england-local-restrictions",
-   "w30": 252,
    "w31": 642,
    "w32": 646,
    "w33": 652.5,
@@ -1970,7 +1847,6 @@
  {
    "localAuthorityName": "Surrey",
    "specialMeasuresLink": "",
-   "w30": 193,
    "w31": 393.8,
    "w32": 398.3,
    "w33": 402.5,
@@ -1986,7 +1862,6 @@
  {
    "localAuthorityName": "Sutton",
    "specialMeasuresLink": "",
-   "w30": 244,
    "w31": 502.1,
    "w32": 506.5,
    "w33": 508.5,
@@ -2002,7 +1877,6 @@
  {
    "localAuthorityName": "Swindon",
    "specialMeasuresLink": "",
-   "w30": 721,
    "w31": 365.3,
    "w32": 418.5,
    "w33": 468.5,
@@ -2018,7 +1892,6 @@
  {
    "localAuthorityName": "Tameside",
    "specialMeasuresLink": "https://www.gov.uk/guidance/greater-manchester-local-restrictions",
-   "w30": 488,
    "w31": 704.3,
    "w32": 731.4,
    "w33": 770.9,
@@ -2034,7 +1907,6 @@
  {
    "localAuthorityName": "Telford and Wrekin",
    "specialMeasuresLink": "",
-   "w30": 844,
    "w31": 352.1,
    "w32": 357.1,
    "w33": 359.4,
@@ -2050,7 +1922,6 @@
  {
    "localAuthorityName": "Thurrock",
    "specialMeasuresLink": "",
-   "w30": 348,
    "w31": 332.1,
    "w32": 339.7,
    "w33": 343.1,
@@ -2066,7 +1937,6 @@
  {
    "localAuthorityName": "Torbay",
    "specialMeasuresLink": "",
-   "w30": 147,
    "w31": 206.2,
    "w32": 208.4,
    "w33": 209.9,
@@ -2082,7 +1952,6 @@
  {
    "localAuthorityName": "Tower Hamlets",
    "specialMeasuresLink": "",
-   "w30": 441,
    "w31": 270.4,
    "w32": 278.9,
    "w33": 284.2,
@@ -2098,7 +1967,6 @@
  {
    "localAuthorityName": "Trafford",
    "specialMeasuresLink": "https://www.gov.uk/guidance/greater-manchester-local-restrictions",
-   "w30": 1015,
    "w31": 585.1,
    "w32": 614.3,
    "w33": 640.5,
@@ -2114,7 +1982,6 @@
  {
    "localAuthorityName": "Wakefield",
    "specialMeasuresLink": "",
-   "w30": 1739,
    "w31": 529.5,
    "w32": 544.6,
    "w33": 562.8,
@@ -2130,7 +1997,6 @@
  {
    "localAuthorityName": "Walsall",
    "specialMeasuresLink": "",
-   "w30": 953,
    "w31": 540.6,
    "w32": 549.4,
    "w33": 556.9,
@@ -2146,7 +2012,6 @@
  {
    "localAuthorityName": "Waltham Forest",
    "specialMeasuresLink": "",
-   "w30": 578,
    "w31": 378.8,
    "w32": 382,
    "w33": 388.9,
@@ -2162,7 +2027,6 @@
  {
    "localAuthorityName": "Wandsworth",
    "specialMeasuresLink": "",
-   "w30": 521,
    "w31": 367.6,
    "w32": 376.1,
    "w33": 385.3,
@@ -2178,7 +2042,6 @@
  {
    "localAuthorityName": "Warrington",
    "specialMeasuresLink": "https://www.gov.uk/guidance/merseyside-halton-and-warrington-local-restrictions",
-   "w30": 429,
    "w31": 640.4,
    "w32": 641.9,
    "w33": 658.6,
@@ -2194,7 +2057,6 @@
  {
    "localAuthorityName": "Warwickshire",
    "specialMeasuresLink": "",
-   "w30": 420,
    "w31": 448.3,
    "w32": 456.6,
    "w33": 462.5,
@@ -2210,7 +2072,6 @@
  {
    "localAuthorityName": "West Berkshire",
    "specialMeasuresLink": "",
-   "w30": 315,
    "w31": 309.1,
    "w32": 314.1,
    "w33": 315.4,
@@ -2226,7 +2087,6 @@
  {
    "localAuthorityName": "West Sussex",
    "specialMeasuresLink": "",
-   "w30": 361,
    "w31": 325,
    "w32": 327.2,
    "w33": 329.6,
@@ -2242,7 +2102,6 @@
  {
    "localAuthorityName": "Westminster",
    "specialMeasuresLink": "",
-   "w30": 313,
    "w31": 317.6,
    "w32": 324.3,
    "w33": 337.6,
@@ -2258,7 +2117,6 @@
  {
    "localAuthorityName": "Wigan",
    "specialMeasuresLink": "https://www.gov.uk/guidance/greater-manchester-local-restrictions",
-   "w30": 399,
    "w31": 666.1,
    "w32": 673.1,
    "w33": 680.2,
@@ -2274,7 +2132,6 @@
  {
    "localAuthorityName": "Wiltshire",
    "specialMeasuresLink": "",
-   "w30": 221,
    "w31": 258,
    "w32": 263,
    "w33": 266.8,
@@ -2290,7 +2147,6 @@
  {
    "localAuthorityName": "Windsor and Maidenhead",
    "specialMeasuresLink": "",
-   "w30": 398,
    "w31": 277,
    "w32": 280.3,
    "w33": 285.6,
@@ -2306,7 +2162,6 @@
  {
    "localAuthorityName": "Wirral",
    "specialMeasuresLink": "https://www.gov.uk/guidance/merseyside-halton-and-warrington-local-restrictions",
-   "w30": 217,
    "w31": 637.3,
    "w32": 642.6,
    "w33": 646.3,
@@ -2322,7 +2177,6 @@
  {
    "localAuthorityName": "Wokingham",
    "specialMeasuresLink": "",
-   "w30": 119,
    "w31": 360.2,
    "w32": 362,
    "w33": 364.9,
@@ -2338,7 +2192,6 @@
  {
    "localAuthorityName": "Wolverhampton",
    "specialMeasuresLink": "https://www.gov.uk/guidance/birmingham-sandwell-and-solihull-local-restrictions",
-   "w30": 496,
    "w31": 548.8,
    "w32": 566,
    "w33": 577.8,
@@ -2354,7 +2207,6 @@
  {
    "localAuthorityName": "Worcestershire",
    "specialMeasuresLink": "",
-   "w30": 186,
    "w31": 407.6,
    "w32": 410.4,
    "w33": 413.8,
@@ -2370,7 +2222,6 @@
  {
    "localAuthorityName": "York",
    "specialMeasuresLink": "",
-   "w30": 95,
    "w31": 439.8,
    "w32": 441.2,
    "w33": 445,

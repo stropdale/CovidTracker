@@ -55,7 +55,7 @@ struct LocalAuthorityModel {
         
         cumulativePositiveCases = [Float]()
         
-        var keyVal = 30
+        var keyVal = 31
         var finished = false
         
         while finished == false {

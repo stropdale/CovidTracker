@@ -13,6 +13,7 @@ class AllTimeChart: BaseChartView {
     
     func dataSet(dataSet: [ChartDataPoint]) {
         allDataPoints = dataSet
+        updateChart()
     }
     
     override var dataPoints: [ChartDataPoint]? {

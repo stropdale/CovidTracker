@@ -26,6 +26,9 @@ class LocalAuthDetailsViewController: UIViewController {
     @IBOutlet weak var changeDirectionLabel: UILabel!
     @IBOutlet weak var inLockDown: UILabel!
     
+    @IBOutlet weak var newCasesChart: AllTimeChart!
+    
+    
     var localAuthModel: LocalAuthorityModel?
     
     private func populate() {
@@ -39,6 +42,8 @@ class LocalAuthDetailsViewController: UIViewController {
         setNewCases()
         setCumilativeCases()
         setDirection()
+        
+        setUpNewCasesChart()
     }
     
     private func setNewCases() {
@@ -165,6 +170,28 @@ class LocalAuthDetailsViewController: UIViewController {
         populate()
     }
     
+}
+
+// MARK: - All time chart
+extension LocalAuthDetailsViewController {
+    private func setUpNewCasesChart() {
+        guard let model = localAuthModel else {
+            return
+        }
+        
+        var dataPoints = [ChartDataPoint]()
+        for (i, f) in model.newPositiveCases.enumerated() {
+            // Ignore the first figure
+            if i == 0 {
+                continue
+            }
+            
+            let date = DateHelpers.endDateForArrayPosition(position: i)
+            dataPoints.append(ChartDataPoint.init(date: date, value: f))
+        }
+        
+        newCasesChart.dataSet(dataSet: dataPoints)
+    }
 }
 
 extension LocalAuthDetailsViewController: SFSafariViewControllerDelegate {

@@ -33,7 +33,7 @@ class BaseChartView: UIView {
     
     private lazy var dateFormatter: DateFormatter = {
         let df = DateFormatter()
-        df.dateStyle = .short
+        df.dateFormat = "dd/MM/yy";
         
         return df
     }()
@@ -52,7 +52,6 @@ class BaseChartView: UIView {
     }
     
     @objc public func updateChart() {
-        
         chartView.delegate = self
         
         infoLabel.text = ""
@@ -121,8 +120,6 @@ class BaseChartView: UIView {
         //setChartYRange()
         setChartXRange()
     }
-    
-    
     
     private func setChartXRange() {
         guard let start = dataPoints?.first?.date else {
