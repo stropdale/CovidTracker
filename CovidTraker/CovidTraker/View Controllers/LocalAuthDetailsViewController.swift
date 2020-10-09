@@ -129,7 +129,7 @@ class LocalAuthDetailsViewController: UIViewController {
         
         // Description
         let dateStr = DateHelpers.endDateStrForArrayPosition(position: model.newPositiveCases.count - 1)
-        cumulativeCasesDescLabel.text = "new cases of COVID-19 reported per 100k in the week ending \(dateStr), since the 29th of June"
+        cumulativeCasesDescLabel.text = "new cases of COVID-19 reported per 100k in the week ending \(dateStr), since the 29th June."
     }
     
     private func setLockdownState() {
@@ -138,13 +138,25 @@ class LocalAuthDetailsViewController: UIViewController {
         }
         
         if model.isUnderSpecialMeasures {
-            inLockDown.text = "\(model.localAuthorityName) is currently under special measures.\nTap here to learn more."
+            inLockDown.text = "\(model.localAuthorityName) currently has additional local restrictions.\nTap here to learn more."
             inLockDown.textColor = .red
             
         }
         else {
             inLockDown.text = "\(model.localAuthorityName) is not currently under special measures."
             inLockDown.textColor = .appGreen
+        }
+    }
+    
+    @IBAction func tappedFav(_ sender: UIBarButtonItem) {
+        let favIcon = UIImage.init(systemName: "star.fill")
+        let notFavIcon = UIImage.init(systemName: "star")
+        
+        if sender.image == favIcon {
+            sender.image = notFavIcon
+        }
+        else {
+            sender.image = favIcon
         }
     }
     
@@ -231,7 +243,7 @@ extension LocalAuthDetailsViewController {
             return ""
         }
         
-        let start = DateHelpers.endDateStrForArrayPosition(position: 0)
+        let start = DateHelpers.startDateStrForArrayPosition(position: 0)
         let end = DateHelpers.endDateStrForArrayPosition(position: model.cumulativePositiveCases.count - 1)
         
         let str = "Positive cases per 100k from \(start) to \(end)"

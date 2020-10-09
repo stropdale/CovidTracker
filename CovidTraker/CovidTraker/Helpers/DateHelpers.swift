@@ -9,7 +9,7 @@ import Foundation
 
 class DateHelpers {
     static func startDateForArrayPosition(position: Int) -> Date {
-        let week31Start = "2020-07-27T00:00:00+0000"
+        let week31Start = "2020-07-22T00:00:00+0000"
 
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
@@ -22,7 +22,7 @@ class DateHelpers {
     }
     
     static func endDateForArrayPosition(position: Int) -> Date {
-        let week31End = "2020-08-03T00:00:00+0000"
+        let week31End = "2020-07-28T00:00:00+0000"
 
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX

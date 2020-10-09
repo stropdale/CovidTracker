@@ -128,11 +128,11 @@
             <objects>
                 <viewController storyboardIdentifier="LocalAuthDetailsViewController" id="YO0-Oh-D7Y" customClass="LocalAuthDetailsViewController" customModule="CovidTraker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="utV-1u-lcs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1146"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1346"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4M-A3-erN">
-                                <rect key="frame" x="0.0" y="56" width="414" height="1090"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="1290"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DSh-za-j3D">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
@@ -374,7 +374,31 @@ Tap here to learn more.</string>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P59-gv-oPy">
                                                 <rect key="frame" x="0.0" y="1007" width="414" height="193"/>
-                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some explanations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLJ-SX-RUJ">
+                                                        <rect key="frame" x="16" y="8" width="398" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7H-pM-FAv">
+                                                        <rect key="frame" x="16" y="36.5" width="390" height="47"/>
+                                                        <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                                        <string key="text">Cases per 100K? The incidence rate of confirmed Covid-19 cases since 29 June divided by the total population of each Local Authority centre multiplied by 100,000.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="nLJ-SX-RUJ" secondAttribute="trailing" id="1bu-Fo-tuv"/>
+                                                    <constraint firstItem="nLJ-SX-RUJ" firstAttribute="leading" secondItem="P59-gv-oPy" secondAttribute="leading" constant="16" id="3sw-w1-VHm"/>
+                                                    <constraint firstItem="B7H-pM-FAv" firstAttribute="top" secondItem="nLJ-SX-RUJ" secondAttribute="bottom" constant="8" id="fuJ-ph-kH3"/>
+                                                    <constraint firstItem="B7H-pM-FAv" firstAttribute="leading" secondItem="P59-gv-oPy" secondAttribute="leading" constant="16" id="gEU-6i-Kyl"/>
+                                                    <constraint firstItem="nLJ-SX-RUJ" firstAttribute="top" secondItem="P59-gv-oPy" secondAttribute="top" constant="8" id="hzS-S6-2ek"/>
+                                                    <constraint firstAttribute="trailing" secondItem="B7H-pM-FAv" secondAttribute="trailing" constant="8" id="y2x-YT-g7A"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -403,14 +427,18 @@ Tap here to learn more.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Some Local Authority" largeTitleDisplayMode="always" id="aoT-2A-hiW">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="star" catalog="system" id="gPY-jx-CoQ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="star" catalog="system" id="gPY-jx-CoQ">
+                            <connections>
+                                <action selector="tappedFav:" destination="YO0-Oh-D7Y" id="eS2-tX-1Bc"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="nwM-V7-uei">
                             <connections>
                                 <action selector="doneTapped:" destination="YO0-Oh-D7Y" id="SBA-ps-iP1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <size key="freeformSize" width="414" height="1200"/>
+                    <size key="freeformSize" width="414" height="1400"/>
                     <connections>
                         <outlet property="changeDirectionLabel" destination="AyO-9Z-4Gm" id="2kD-Lb-wEn"/>
                         <outlet property="cumulativeCasesChart" destination="or6-Db-6BI" id="nGb-5M-WBi"/>
@@ -428,7 +456,7 @@ Tap here to learn more.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4Q-Cz-KY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2725" y="181"/>
+            <point key="canvasLocation" x="2724.6376811594205" y="180.80357142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p7C-sT-B1k">
@@ -482,9 +510,6 @@ Tap here to learn more.</string>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
