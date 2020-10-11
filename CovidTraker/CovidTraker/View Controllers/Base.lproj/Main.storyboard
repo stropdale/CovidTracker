@@ -454,6 +454,7 @@ The total number of cases since 29 June. As time goes on this number will at bes
                         <outlet property="cumulativeCasesStatsLabel" destination="1Ex-l5-00C" id="PWm-fm-W7C"/>
                         <outlet property="directionArrow" destination="Or0-H4-VB2" id="QLp-oU-F3V"/>
                         <outlet property="directionDescLabel" destination="AyO-9Z-4Gm" id="vAO-zH-er9"/>
+                        <outlet property="favStar" destination="gPY-jx-CoQ" id="WGf-gv-3eO"/>
                         <outlet property="inLockDown" destination="L4c-MR-cG6" id="A7d-E1-thx"/>
                         <outlet property="newCasesChart" destination="05g-wT-SE5" id="d6t-bP-pww"/>
                         <outlet property="newCasesChartLabel" destination="mGL-B0-fpS" id="9Yl-s6-vpx"/>

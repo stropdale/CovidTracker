@@ -10,27 +10,33 @@ import SafariServices
 
 class LocalAuthDetailsViewController: UIViewController {
     
-    let upImage = UIImage(systemName: "arrow.up")?.withRenderingMode(.alwaysTemplate)
-    let downImage = UIImage(systemName: "arrow.down")?.withRenderingMode(.alwaysTemplate)
-    let noChangeImage = UIImage(systemName: "equal")?.withRenderingMode(.alwaysTemplate)
+    private let upImage = UIImage(systemName: "arrow.up")?.withRenderingMode(.alwaysTemplate)
+    private let downImage = UIImage(systemName: "arrow.down")?.withRenderingMode(.alwaysTemplate)
+    private let noChangeImage = UIImage(systemName: "equal")?.withRenderingMode(.alwaysTemplate)
     
-    @IBOutlet weak var cumulativeCasesStatsLabel: UILabel!
-    @IBOutlet weak var cumulativeCasesDescLabel: UILabel!
+    private let favIcon = UIImage.init(systemName: "star.fill")
+    private let notFavIcon = UIImage.init(systemName: "star")
     
-    @IBOutlet weak var newCasesStatsLabel: UILabel!
-    @IBOutlet weak var newCasesDescLabel: UILabel!
     
-    @IBOutlet weak var directionArrow: UIImageView!
-    @IBOutlet weak var directionDescLabel: UILabel!
+    @IBOutlet private weak var favStar: UIBarButtonItem!
     
-    @IBOutlet weak var changeDirectionLabel: UILabel!
-    @IBOutlet weak var inLockDown: UILabel!
+    @IBOutlet private weak var cumulativeCasesStatsLabel: UILabel!
+    @IBOutlet private weak var cumulativeCasesDescLabel: UILabel!
     
-    @IBOutlet weak var newCasesChart: AllTimeChart!
-    @IBOutlet weak var newCasesChartLabel: UILabel!
+    @IBOutlet private weak var newCasesStatsLabel: UILabel!
+    @IBOutlet private weak var newCasesDescLabel: UILabel!
     
-    @IBOutlet weak var cumulativeCasesChart: AllTimeChart!
-    @IBOutlet weak var cumulativeCasesChartLabel: UILabel!
+    @IBOutlet private weak var directionArrow: UIImageView!
+    @IBOutlet private weak var directionDescLabel: UILabel!
+    
+    @IBOutlet private weak var changeDirectionLabel: UILabel!
+    @IBOutlet private weak var inLockDown: UILabel!
+    
+    @IBOutlet private weak var newCasesChart: AllTimeChart!
+    @IBOutlet private weak var newCasesChartLabel: UILabel!
+    
+    @IBOutlet private weak var cumulativeCasesChart: AllTimeChart!
+    @IBOutlet private weak var cumulativeCasesChartLabel: UILabel!
     
     
     var localAuthModel: LocalAuthorityModel?
@@ -149,14 +155,18 @@ class LocalAuthDetailsViewController: UIViewController {
     }
     
     @IBAction func tappedFav(_ sender: UIBarButtonItem) {
-        let favIcon = UIImage.init(systemName: "star.fill")
-        let notFavIcon = UIImage.init(systemName: "star")
-        
-        if sender.image == favIcon {
+        if sender.image == favIcon { // Unfav
             sender.image = notFavIcon
+            
+            if let name = localAuthModel?.localAuthorityName {
+                Favorites.removeFavorite(favorite: name)
+            }
         }
-        else {
+        else { // Fav
             sender.image = favIcon
+            if let name = localAuthModel?.localAuthorityName {
+                Favorites.addFavorite(favorite: name)
+            }
         }
     }
     
@@ -185,8 +195,21 @@ class LocalAuthDetailsViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
         populate()
+        showFavState()
     }
     
+    private func showFavState() {
+        guard let name = localAuthModel?.localAuthorityName else {
+            return
+        }
+        
+        if Favorites.hasFavorite(favorite: name) {
+            favStar.image = favIcon
+        }
+        else {
+            favStar.image = notFavIcon
+        }
+    }
 }
 
 // MARK: - All time charts
