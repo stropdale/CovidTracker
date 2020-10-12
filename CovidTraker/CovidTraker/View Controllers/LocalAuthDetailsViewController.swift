@@ -8,7 +8,13 @@
 import UIKit
 import SafariServices
 
+protocol LifeCycle {
+    func hostedViewDidClose()
+}
+
 class LocalAuthDetailsViewController: UIViewController {
+    
+    public var delegate: LifeCycle?
     
     private let upImage = UIImage(systemName: "arrow.up")?.withRenderingMode(.alwaysTemplate)
     private let downImage = UIImage(systemName: "arrow.down")?.withRenderingMode(.alwaysTemplate)
@@ -37,7 +43,6 @@ class LocalAuthDetailsViewController: UIViewController {
     
     @IBOutlet private weak var cumulativeCasesChart: AllTimeChart!
     @IBOutlet private weak var cumulativeCasesChartLabel: UILabel!
-    
     
     var localAuthModel: LocalAuthorityModel?
     
@@ -196,6 +201,11 @@ class LocalAuthDetailsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         populate()
         showFavState()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        delegate?.hostedViewDidClose()
     }
     
     private func showFavState() {

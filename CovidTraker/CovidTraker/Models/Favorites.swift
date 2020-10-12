@@ -10,8 +10,9 @@ import Foundation
 class Favorites {
     
     private static let favKey = "FavKey"
+    private static var allLAs: [LocalAuthorityModel]?
     
-    static var favorites: [String] {
+    static var favoritesNames: [String] {
         get {
             if let favorites = UserDefaults.standard.array(forKey: favKey) as? [String] {
                 return favorites
@@ -22,7 +23,7 @@ class Favorites {
     }
     
     static func hasFavorite(favorite: String) -> Bool {
-        return favorites.contains(favorite)
+        return favoritesNames.contains(favorite)
     }
     
     static func addFavorite(favorite: String) {
@@ -54,6 +55,24 @@ class Favorites {
         if let found = found {
             favorites.remove(at: found)
             UserDefaults.standard.setValue(favorites, forKey: favKey)
+        }
+    }
+    
+    static var favorites: [LocalAuthorityModel] {
+        get {
+            var results = [LocalAuthorityModel]()
+            
+            guard let arr = DataLoader.loadBundledData() else {
+                return results
+            }
+            
+            for item in arr {
+                if favoritesNames.contains(item.localAuthorityName) {
+                    results.append(item)
+                }
+            }
+            
+            return results
         }
     }
 }

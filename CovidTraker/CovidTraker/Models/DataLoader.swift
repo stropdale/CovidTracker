@@ -10,7 +10,6 @@ import Foundation
 
 /// Loads the local data set
 class DataLoader {
-    
     static public func loadBundledData() -> [LocalAuthorityModel]? {
         return loadFile(fileName: "dataset")
     }
