@@ -112,7 +112,13 @@
                             <constraint firstItem="ImL-yf-xi8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="t9B-LF-6Bz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="New cases in last week" largeTitleDisplayMode="always" id="VgU-TR-qKk"/>
+                    <navigationItem key="navigationItem" title="New cases in last week" largeTitleDisplayMode="always" id="VgU-TR-qKk">
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="4V4-NH-gv6">
+                            <connections>
+                                <segue destination="J11-uo-6cw" kind="showDetail" id="ov8-M7-gqh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="1MH-Ig-868" id="G9D-e9-BJJ"/>
                         <outlet property="segmentedController" destination="HfY-8U-5Il" id="lKc-76-h0j"/>
@@ -484,6 +490,62 @@ The total number of cases since 29 June. As time goes on this number will at bes
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
         </scene>
+        <!--Licence View Controller-->
+        <scene sceneID="QOn-zy-eJW">
+            <objects>
+                <viewController id="J11-uo-6cw" customClass="LicenceViewController" customModule="CovidTraker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8pj-YX-NfW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOg-aF-BMa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="Licence" id="tJM-aO-Jbw">
+                                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="9Ay-rL-RbC">
+                                            <connections>
+                                                <action selector="doneTapped:" destination="J11-uo-6cw" id="7mg-WY-80C"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3A-KC-odL">
+                                <rect key="frame" x="20" y="72" width="374" height="101.5"/>
+                                <string key="text">Statistical data in this app is provided by Public Health England under the Open Government Licence v3.0.
+
+You can find the source data here...</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IM8-gi-spF">
+                                <rect key="frame" x="20" y="193.5" width="374" height="30"/>
+                                <state key="normal" title="National COVID-19 surveillance reports"/>
+                                <connections>
+                                    <action selector="sourceDataTapped:" destination="J11-uo-6cw" eventType="touchUpInside" id="ywX-Dx-vds"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DM2-qE-DGz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IM8-gi-spF" firstAttribute="leading" secondItem="DM2-qE-DGz" secondAttribute="leading" constant="20" id="1LP-uH-U2e"/>
+                            <constraint firstItem="J3A-KC-odL" firstAttribute="leading" secondItem="DM2-qE-DGz" secondAttribute="leading" constant="20" id="1ev-k4-Yju"/>
+                            <constraint firstItem="DM2-qE-DGz" firstAttribute="trailing" secondItem="IM8-gi-spF" secondAttribute="trailing" constant="20" id="40S-ZF-3pv"/>
+                            <constraint firstItem="J3A-KC-odL" firstAttribute="top" secondItem="fOg-aF-BMa" secondAttribute="bottom" constant="16" id="9gr-33-Mxl"/>
+                            <constraint firstItem="fOg-aF-BMa" firstAttribute="trailing" secondItem="DM2-qE-DGz" secondAttribute="trailing" id="9ub-k6-6jG"/>
+                            <constraint firstItem="IM8-gi-spF" firstAttribute="top" secondItem="J3A-KC-odL" secondAttribute="bottom" constant="20" id="FXx-jt-KfG"/>
+                            <constraint firstItem="DM2-qE-DGz" firstAttribute="trailing" secondItem="J3A-KC-odL" secondAttribute="trailing" constant="20" id="Gwq-76-2XA"/>
+                            <constraint firstItem="fOg-aF-BMa" firstAttribute="top" secondItem="DM2-qE-DGz" secondAttribute="top" id="W1C-qs-D3f"/>
+                            <constraint firstItem="fOg-aF-BMa" firstAttribute="leading" secondItem="DM2-qE-DGz" secondAttribute="leading" id="yAB-s8-afC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvC-JQ-NSi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.0434782608697" y="-595.3125"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZmZ-2s-vGa">
             <objects>
@@ -506,6 +568,7 @@ The total number of cases since 29 June. As time goes on this number will at bes
     <resources>
         <image name="arrow.down" catalog="system" width="120" height="128"/>
         <image name="equal" catalog="system" width="128" height="72"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
