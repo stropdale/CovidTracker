@@ -29,7 +29,6 @@ class LocalAuthoritiesListViewController: UIViewController, LifeCycle {
     var models: [LocalAuthorityModel] {
         let models = vm.sortedAndFilteredDataModels(selectedIndex: segmentedController.selectedSegmentIndex,
                                                           searchTerm: searchBar.text)
-        
         return models
     }
     
@@ -83,6 +82,7 @@ extension LocalAuthoritiesListViewController: UITableViewDelegate {
         if indexPath.section == 0 && !favs.isEmpty {
             let model = favs[indexPath.row]
             selectedLocalAuthDetailsViewController?.localAuthModel = model
+            return
         }
         
         let model = models[indexPath.row]

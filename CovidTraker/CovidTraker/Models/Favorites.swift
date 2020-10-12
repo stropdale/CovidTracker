@@ -72,7 +72,9 @@ class Favorites {
                 }
             }
             
-            return results
+            return results.sorted(by: { (first, second) -> Bool in
+                return first.localAuthorityName < second.localAuthorityName
+            })
         }
     }
 }
