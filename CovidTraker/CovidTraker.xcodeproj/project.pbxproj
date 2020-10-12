@@ -63,6 +63,7 @@
 		E45DDB54252FA634007DEFD6 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		E4663069252DAFE700B35C76 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		E474844A2534A3080062D00F /* LicenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenceViewController.swift; sourceTree = "<group>"; };
+		E474844F2534A4740062D00F /* CovidTraker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CovidTraker.entitlements; sourceTree = "<group>"; };
 		E4ACB1E02533968D008A9107 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		E4BAEC8D252D03DE00F3D73C /* CovidTraker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidTraker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BAEC90252D03DE00F3D73C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +175,7 @@
 		E4BAEC8F252D03DE00F3D73C /* CovidTraker */ = {
 			isa = PBXGroup;
 			children = (
+				E474844F2534A4740062D00F /* CovidTraker.entitlements */,
 				E4CA379F2530ACB000F58F08 /* Charts */,
 				E45DDB4E252FA06E007DEFD6 /* Helpers */,
 				E4F3ACAF252E0D890016B3A8 /* View Controllers */,
@@ -669,6 +671,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CovidTraker/CovidTraker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 6ZBXMFUFJ7;
@@ -679,6 +682,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rbg.CovidTraker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -690,6 +694,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CovidTraker/CovidTraker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 6ZBXMFUFJ7;
@@ -700,6 +705,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rbg.CovidTraker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
